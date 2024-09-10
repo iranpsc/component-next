@@ -1,5 +1,5 @@
 
-# Node modules
+# Node modules (fully ignored)
 node_modules/
 
 # Logs
