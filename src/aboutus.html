@@ -1,0 +1,1066 @@
+<!doctype html>
+<html dir="rtl" lang="fa-IR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+
+<body class=" bg-[#F8F8F8] dark:bg-black w-full font-azarMehr">
+  <!-- start nav -->
+  <header>
+    <!-- start head mobile nav -->
+    <nav class=" w-full m-0 p-0 fixed top-0 z-[1000]  lg:hidden">
+      <div class="w-full  items-center flex justify-between p-4 bg-white  dark:bg-[#0F0F0E] ">
+        <div
+          class="flex justify-between items-center w-full fixed right-0 top-0 lg:relative  bg-white dark:bg-[#0F0F0E] lg:bg-transparent lg:p-0 px-5 py-4">
+          <!-- start open btn nav -->
+          <div class="flex items-center gap-5">
+            <div class="w-max  p-3 rounded-full cursor-pointer flex" onclick="openNav2()">
+              <svg class="lg:hidden dark:fill-white" width="30" height="22" viewBox="0 0 30 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="dark:fill-white" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 1.375C0 0.615608 0.6296 0 1.40625 0H28.5938C29.3704 0 30 0.615608 30 1.375C30 2.13439 29.3704 2.75 28.5938 2.75H1.40625C0.6296 2.75 0 2.13439 0 1.375ZM0 11C0 10.2406 0.6296 9.625 1.40625 9.625H28.5938C29.3704 9.625 30 10.2406 30 11C30 11.7594 29.3704 12.375 28.5938 12.375H1.40625C0.6296 12.375 0 11.7594 0 11ZM0 20.625C0 19.8656 0.6296 19.25 1.40625 19.25H28.5938C29.3704 19.25 30 19.8656 30 20.625C30 21.3844 29.3704 22 28.5938 22H1.40625C0.6296 22 0 21.3844 0 20.625Z"
+                  fill="#0713EF" />
+              </svg>
+            </div>
+            <!-- end open btn nav -->
+            <div class="w-max lg:w-auto flex justify-center items-center">
+              <a href="./index.html"><img src="../images/faq-irpsc 1.png" alt="faq"></a>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- end head mobile nav -->
+
+    <!-- Start active  nsvigation -->
+    <div id="main-nav" class="sidenav  !z-[5000]">
+      <!-- start opened nav -->
+      <div id="open00" dir="ltr"
+        class="hidden bg-white  dark:bg-[#0F0F0E]  p-4  relative  pr-0 h-full !overflow-y-scroll scrollbar !z-[5000]">
+        <nav dir="rtl" class="w-full   space-y-6  relative">
+          <div class="space-y-6 ">
+            <!-- strat head icon RGB -->
+            <div class=" gap-5  my-2 w-full  items-center flex justify-between px-2  bg-white  dark:bg-[#0F0F0E] ">
+              <div class="flex items-center gap-1">
+                <a href="./index.html"><img src="../icon/3dmeta55.png" alt=""></a>
+                <a href="./index.html"><img src="../icon/3ddmetaa143.png" alt=""></a>
+              </div>
+
+              <!-- start close btn nav -->
+              <div>
+                <div id="close-nav-btn"
+                  class="bg-slate-200 dark:bg-[#090909] w-10 h-10 p-3 rounded-full cursor-pointer flex items-center justify-center  "
+                  onclick="closeNav2()">
+                  <img src="../icon/aroowww.svg" alt="" class="w-[60%] ">
+                </div>
+              </div>
+              <!-- end close btn nav -->
+            </div>
+            <!-- end head icon RGB -->
+            <div>
+              <ul class="tree">
+                <li class="flex flex-col gap-4">
+                  <input type="checkbox" id="c1" class="peer" />
+                  <label
+                    class="px-[20px] py-4 w-full rounded-[10px]  text-[#282828]  font-bold  dark:text-[#868B90]   peer-checked:[&>div>svg]:rotate-180 transition-[3s] flex  items-center"
+                    for="c1">
+                    <div class="flex w-full items-center justify-between gap-5">
+                      <div class="flex items-center gap-4">
+                        <img src="../icon/profile3d.png" alt="" class="w-7 h-7  rounded-full">
+                        <a href="#">نام یوزرنیم</a>
+                      </div>
+                      <svg class="transition-[5s] duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="dark:stroke-[#2C2F32]" d="M14 1L7.5 7.5L1 0.999999" stroke="black" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+
+                  </label>
+                  <ul>
+                    <li>
+                      <label class="text-[#868B90] before:text-transparent tree_label">
+                        <div class="flex justify-between items-center">
+                          <img src="../icon/Union.svg" alt="" class="w-7 h-7  ">
+                          <a href="#">پروفایل</a>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="flex gap-5 items-center select-none  border-b-2 pb-5 border-[#EFEFEF]   dark:border-[#868B90] text-[#868B90] px-6"
+              for="c2">
+              <img src="../icon/bag.svg" alt="" class="w-7 h-7  ">
+              <p> سبد خرید</p>
+              <div
+                class="bg-[#FF5722] w-5 h-5 rounded-full text-white text-xs font-bold flex justify-center items-center">
+                <span>2</span>
+              </div>
+            </div>
+          </div>
+          <div class=" h-auto  lg:h-[30vh] xl:h-[35vh] 2xl:h-[45vh] 3xl:h-[53vh] overflow-auto  space-y-3">
+            <div class="pr-[20PX] p-[14px] flex items-center gap-4">
+              <img src="../icon/3dmetaicon.svg" alt="" class="w-7 h-7  ">
+              <a href="#" class="text-[#868B90]"> سه بعدی متا</a>
+            </div>
+            <div>
+              <ul class="tree ">
+                <li class="flex flex-col gap-3  ">
+                  <input type="checkbox" id="c2" class="peer" />
+                  <label
+                    class="px-[20px] py-[14px] w-full rounded-[10px] text-[#868B90]  peer-checked:text-white head_label peer-checked:bg-[#000BEE] dark:peer-checked:bg-[#C2008C] peer-checked:[&>div>svg]:rotate-180  peer-checked:[&>div>svg>path]:stroke-white"
+                    for="c2">
+                    <div class="flex w-full justify-between items-center select-none" for="c2">
+                      <div class="flex gap-4 items-center">
+                        <img src="../icon/Group1000002695.svg" alt="" class="w-7 h-7  ">
+                        <p>بانک مدل های سه بعدی</p>
+                      </div>
+                      <svg class="transition-[5s] duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="stroke-[#868B90]" d="M14 1L7.5 7.5L1 0.999999" stroke="black" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </label>
+                  <ul>
+                    <li class="">
+                      <input type="checkbox" id="c3" class="peer" />
+                      <label for="c3"
+                        class="tree_label w-full text-[#868B90] peer-checked:text-[#000BEE] dark:peer-checked:text-white peer-checked:bg-[#ECF4FE] dark:peer-checked:bg-[#C2008C]/30">
+                        مدل سه بعدی</label>
+                      <ul>
+                        <div
+                          class="flex flex-col text-sm text-[#000BEE] font-bold gap-5 p-3 pr-[20PX] dark:text-[#868B90]">
+                          <a href="#">آواتار</a>
+                          <a href="#">پکیج آواتار
+                          </a>
+                          <a href="#">سه بعدی
+                          </a>
+                          <a href="#">پکیج سه بعدی</a>
+                        </div>
+
+                      </ul>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="c4" class="peer" />
+                      <label for="c4"
+                        class="tree_label w-full text-[#868B90] peer-checked:text-[#000BEE] dark:peer-checked:text-white peer-checked:bg-[#ECF4FE] dark:peer-checked:bg-[#C2008C]/30">آیکون
+                        ها </label>
+                      <ul>
+                        <div
+                          class="flex flex-col text-sm text-[#000BEE] font-bold gap-5 p-3 pr-[20PX] dark:text-[#868B90]">
+                          <a href="#">لورم</a>
+                          <a href="#">لورم</a>
+                          <a href="#">لورم</a>
+                          <a href="#">لورم</a>
+                        </div>
+                      </ul>
+
+                    </li>
+                    <li>
+                      <input type="checkbox" id="c5" class="peer" />
+                      <label for="c5"
+                        class="tree_label w-full text-[#868B90] peer-checked:text-[#000BEE] dark:peer-checked:text-white peer-checked:bg-[#ECF4FE] dark:peer-checked:bg-[#C2008C]/30">
+                        وکتور و ایلوستریتور </label>
+                      <ul>
+                        <div
+                          class="flex flex-col text-sm text-[#000BEE] font-bold gap-5 p-3 pr-[20PX] dark:text-[#868B90]">
+                          <a href="#">لورم</a>
+                          <a href="#">لورم</a>
+                          <a href="#">لورم</a>
+                          <a href="#">لورم</a>
+                        </div>
+                      </ul>
+
+                    </li>
+                    <li>
+                      <input type="checkbox" id="c6" class="peer" />
+                      <label for="c6"
+                        class="tree_label w-full text-[#868B90] peer-checked:text-[#000BEE] dark:peer-checked:text-white peer-checked:bg-[#ECF4FE] dark:peer-checked:bg-[#C2008C]/30">
+                        انیمیشن Lotties </label>
+                      <ul>
+                        <div
+                          class="flex flex-col text-sm text-[#000BEE] font-bold gap-5 p-3 pr-[20PX] dark:text-[#868B90]  ">
+                          <a href="#">لورم</a>
+                          <a href="#">لورم</a>
+                          <a href="#">لورم</a>
+                          <a href="#">لورم</a>
+                        </div>
+                      </ul>
+
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="pr-[20PX] p-[14px] flex items-center gap-4">
+              <img src="../icon/amoozesh.svg" alt="" class="w-7 h-7  ">
+              <a href="#" class="text-[#868B90]">آموزش </a>
+            </div>
+            <div class="pr-[20PX] p-[14px] flex items-center gap-4">
+              <img src="../icon/sefareshicon.svg" alt="" class="w-7 h-7  ">
+              <a href="./sabt-sefaresh.html" class="text-[#868B90]">ثبت سفارش</a>
+            </div>
+            <div class="pr-[20PX] p-[14px] flex items-center gap-4">
+              <img src="../icon/contactus.svg" alt="" class="w-7 h-7  ">
+              <a href="./contactus.html" class="text-[#868B90]"> تماس با ما</a>
+            </div>
+            <div class="pr-[20PX] p-[14px] flex items-center gap-4">
+              <img src="../icon/abuotus.svg" alt="" class="w-7 h-7  ">
+              <a href="./aboutus.html" class="text-[#868B90]"> درباره ما</a>
+            </div>
+            <div>
+              <ul class="tree">
+                <li class="flex flex-col gap-3">
+                  <input type="checkbox" id="c11" class="peer" />
+                  <label
+                    class="px-[20px] py-4 w-full rounded-[10px] text-[#868B90]  peer-checked:text-white head_label peer-checked:bg-[#000BEE] dark:peer-checked:bg-[#C2008C] peer-checked:[&>div>svg]:rotate-180 peer-checked:[&>div>svg>path]:stroke-white"
+                    for="c11">
+                    <div class="flex w-full justify-between items-center select-none" for="c2">
+                      <div class="flex items-center gap-4">
+                        <img src="../icon/zaban.svg" alt="" class="w-7 h-7  ">
+                        <p> زبان </p>
+                      </div>
+                      <svg class="transition-[5s] duration-300" width="15" height="9" viewBox="0 0 15 9" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class=" stroke-[#868B90]" d="M14 1L7.5 7.5L1 0.999999" stroke="black" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </label>
+                  <ul>
+                    <div id="zaban"
+                      class="flex flex-col text-sm text-[#000BEE] font-bold gap-5 p-3 pr-[20PX] dark:text-[#868B90]">
+                      <a href="#">فارسی</a>
+                      <a href="#"> انگیلیسی</a>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="space-y-6  lg:absolute bottom-0  w-full h-auto lg:h-1/5 2xl:h-1/6 bg-white  dark:bg-[#0F0F0E] pb-10 lg:pb-1">
+            <div
+              class=" w-full flex justify-between items-center px-6 p-[10px] font-bold text-white dark:text-black bg-[#2667FF] dark:bg-[#FFC700] rounded-[10px] ">
+              <img src="../icon/login3d.svg" alt="" class="w-7 h-7">
+              <a href="#" class="font-bold">ورود</a>
+            </div>
+            <div class="pt-5 border-t-2 border-[#EFEFEF]   dark:border-[#868B90] ">
+              <div class=" flex rounded-full w-full p-[6px] bg-[#F4F4F4] dark:bg-[#090909] ">
+                <button
+                  class="enable-dark-mode bg-transparent dark:bg-[#0F0F0E] flex justify-center p-1 rounded-full w-1/2  ">
+                  <div>
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fill-slate-400 dark:fill-white"
+                        d="M6.2 1C3.2 1.8 1 4.6 1 7.9 1 11.8 4.2 15 8.1 15c3.3 0 6-2.2 6.9-5.2C9.7 11.2 4.8 6.3 6.2 1Z" />
+                      <path class="fill-slate-500 dark:fill-white"
+                        d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z" />
+                    </svg>
+                  </div>
+                </button>
+                <button
+                  class="disable-dark-mode  bg-[#FCFCFC] dark:bg-transparent flex justify-center p-1 rounded-full w-1/2 shadow-[0_0_6px_0_rgba(0,0,0,0.1)] dark:shadow-none">
+                  <div for="light-switch">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fill-slate-300 dark:fill-white"
+                        d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z" />
+                      <path class="fill-slate-400 dark:fill-white"
+                        d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- End opened nav -->
+      <!-- start closed nav -->
+      <div dir="ltr" id="close00" class=" h-full">
+        <nav dir="rtl"
+          class="bg-[#FCFCFC] dark:bg-[#0F0F0E]  pr-0 space-y-9 flex justify-start items-center flex-col py-6 h-full relative">
+          <div
+            class="w-full space-y-9 flex flex-col items-center justify-center border-b-2 border-[#EFEFEF] px-3  dark:border-[#868B90] pb-6  lg:h-[40%] xl:[40%] 2xl:h-[35%] 3xl:h-[30%]">
+            <!-- start open btn nav -->
+            <div id="open-nav-btn" class="items-center w-7 h-7" onclick="openNav2()">
+              <svg class=" dark:fill-white" width="30" height="22" viewBox="0 0 30 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="dark:fill-white" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 1.375C0 0.615608 0.6296 0 1.40625 0H28.5938C29.3704 0 30 0.615608 30 1.375C30 2.13439 29.3704 2.75 28.5938 2.75H1.40625C0.6296 2.75 0 2.13439 0 1.375ZM0 11C0 10.2406 0.6296 9.625 1.40625 9.625H28.5938C29.3704 9.625 30 10.2406 30 11C30 11.7594 29.3704 12.375 28.5938 12.375H1.40625C0.6296 12.375 0 11.7594 0 11ZM0 20.625C0 19.8656 0.6296 19.25 1.40625 19.25H28.5938C29.3704 19.25 30 19.8656 30 20.625C30 21.3844 29.3704 22 28.5938 22H1.40625C0.6296 22 0 21.3844 0 20.625Z"
+                  fill="#0713EF" />
+              </svg>
+            </div>
+            <!-- end open btn nav -->
+            <div class="w-7  flex items-center justify-center">
+              <a href="./index.html" class="w-full">
+                <img src="../icon/3ddmetaa143.png" alt="" class="w-full">
+              </a>
+            </div>
+            <div class="w-7 flex items-center justify-center">
+              <a href="#" class="w-full">
+                <img src="../icon/profile3d.png" alt="" class="w-full border rounded-full">
+              </a>
+            </div>
+            <div class="w-7 flex items-center justify-center">
+              <a href="#" class="w-full">
+                <img src="../icon/bag.svg" alt="" class="w-full">
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex  items-center flex-col gap-11 h-auto pr-4 lg:h-[30%] xl:h-[35%] 2xl:h-[50%] 3xl:h-[55%] !overflow-y-scroll scrollbar">
+            <div class=" w-7 h-7  ">
+              <a href="#" class="w-full">
+                <img src="../icon/3dmetaicon.svg" alt="" class="w-full">
+              </a>
+            </div>
+            <div class="w-7 h-7">
+              <a href="#" class="w-full">
+                <img src="../icon/Group1000002695.svg" alt="" class="w-full">
+              </a>
+            </div>
+            <div class="w-7 h-7 ">
+              <a href="#" class="w-full">
+                <img src="../icon/amoozesh.svg" alt="" class="w-full h-full">
+              </a>
+            </div>
+            <div class="w-7 h-7">
+              <a href="./sabt-sefaresh.html" class="w-full">
+                <img src="../icon/sefareshicon.svg" alt="" class="w-full">
+              </a>
+            </div>
+            <div class="w-7 h-7">
+              <a href="./contactus.html" class="w-full">
+                <img src="../icon/contactus.svg" alt="" class="w-full">
+              </a>
+            </div>
+            <div class="w-7 h-7">
+              <a href="./aboutus.html" class="w-full">
+                <img src="../icon/abuotus.svg" alt="" class="w-full">
+              </a>
+            </div>
+            <div class="w-7 h-7">
+              <a href="#" class="w-full">
+                <img src="../icon/zaban.svg" alt="" class="w-full">
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-full space-y-6 px-3   h-auto lg:h-[30%] xl:h-[26%] 2xl:h-[15%] bg-white  dark:bg-[#0F0F0E] pb-5">
+            <div class="w-10  justify-center items-center">
+              <a href="#"
+                class=" flex w-full p-1 justify-center items-center  aspect-square font-bold text-white  bg-[#2667FF] dark:bg-[#FFC700] rounded-[10px] ">
+                <img src="../icon/login3d.svg" alt="" class="w-[70%]">
+              </a>
+            </div>
+            <div class="pt-6 border-t-2 border-[#EFEFEF] flex justify-center   dark:border-[#868B90]">
+              <div class=" flex rounded-full w-max p-[6px] bg-[#F4F4F4] dark:bg-[#090909]">
+                <button
+                  class="enable-dark-mode2 dark:hidden bg-transparent dark:bg-[#0F0F0E] flex justify-center items-center p-1 rounded-full w-5 h-5  ">
+                  <div>
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fill-slate-400 dark:fill-white"
+                        d="M6.2 1C3.2 1.8 1 4.6 1 7.9 1 11.8 4.2 15 8.1 15c3.3 0 6-2.2 6.9-5.2C9.7 11.2 4.8 6.3 6.2 1Z" />
+                      <path class="fill-slate-500 dark:fill-white"
+                        d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z" />
+                    </svg>
+                  </div>
+                </button>
+                <button
+                  class="disable-dark-mode2 hidden   bg-[#FCFCFC] dark:bg-transparent dark:flex justify-center items-center p-1 rounded-full w-5 h-5  shadow-[0_0_6px_0_rgba(0,0,0,0.1)] dark:shadow-none">
+                  <div for="light-switch">
+                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                      <path class="fill-slate-300 dark:fill-white"
+                        d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z" />
+                      <path class="fill-slate-400 dark:fill-white"
+                        d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+      </div>
+      <!-- end closed nav -->
+    </div>
+    <!-- End nsvigation -->
+  </header>
+  <!-- end nav -->
+  <main class="w-full main-content-smallNav ">
+
+    <section class="max-w-[1500px] mx-auto p-4 lg:p-9 mt-24 lg:mt-14">
+      <div class="flex flex-col gap-10 ">
+        <div>
+          <h1 class="text-[#414040] dark:text-gray-200 text-lg md:text-2xl font-bold font-rohk"> درباره ما</h1>
+          <p class="text-[#52545C] dark:text-[#A0A0AB] text-justify text-sm md:text-lg mt-5  leading-10">پروژه متاورس
+            رنگ** یا همان **متارنگ**، به عنوان نخستین پروژه‌ی متاورسی ایران، با هدف خلق یک جهان مجازی و موازی مبتنی بر
+            چشم‌اندازی قوی ایرانی آغاز به کار کرده است. این پروژه با بهره‌گیری از تکنولوژی‌هایی فراتر از باور، دریچه‌ای
+            نو
+            به سوی آینده‌ای دیجیتالی گشوده است که امکان زندگی، تعامل و کسب و کار در دنیایی موازی را برای کاربران فراهم
+            می‌کند.</p>
+
+        </div>
+        <div
+          class="w-full flex items-center  bg-[#FFFFFF] dark:bg-[#1A1A18] text-[#6A6A6A] dark:text-[#FFFFFF] rounded-[30px] p-6 py-10 leading-10 text-sm md:text-lg text-justify">
+          <p>**متارنگ** با تأکید بر نوآوری و کارآفرینی، بستری را فراهم کرده است که افراد می‌توانند از طریق آن به توسعه‌ی
+            کسب و کارها و اقتصاد بین‌المللی بپردازند. این پلتفرم با ایجاد درگاه‌های بین‌المللی، امکان تعاملات هدفمند و
+            سازنده را با دیگر کشورها و فرهنگ‌ها فراهم می‌کند، و به این ترتیب، کاربران قادر خواهند بود تا فرصت‌های جدیدی
+            برای رشد و گسترش فعالیت‌های خود در دنیای مجازی بیابند.
+
+            زندگی در متارنگ، نه تنها یک تجربه مجازی است، بلکه به عنوان یک زندگی موازی با جهان واقعی تعریف می‌شود. در این
+            جهان مجازی، شما می‌توانید زندگی جدیدی را آغاز کنید، از ایده‌های خلاقانه بهره ببرید و در توسعه‌ی اقتصاد
+            دیجیتال
+            و بین‌المللی سهم داشته باشید.
+          </p>
+        </div>
+        <div>
+          <h3 class="dark:text-[#FFFFFF] text-lg md:text-2xl font-bold font-rohk">تیم متاورس </h3>
+          <p class="text-[#52545C] dark:text-[#A0A0AB] text-justify text-sm md:text-lg mt-5  leading-10">
+            **پروژه متاورس رنگ** با تکیه بر اصالت ایرانی و تکنولوژی پیشرفته، به دنبال ایجاد یک فضای مجازی منحصر به فرد
+            است
+            که افراد را قادر می‌سازد تا به گونه‌ای متفاوت و نوآورانه در این جهان جدید مشارکت کنند. با تمرکز بر ارتقای
+            تعاملات بین‌المللی و ایجاد فرصت‌های کارآفرینی، متارنگ به سوی خلق آینده‌ای روشن و باشکوه برای همگان گام
+            برمی‌دارد.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-5 gap-y-10 mt-20">
+        <div class="bg-[#FFFFFF] dark:bg-[#1A1A18] rounded-[20px] p-5">
+          <div class="flex flex-col gap-3 md:gap-5 items-center">
+            <div class="flex justify-center items-center">
+              <img class="rounded-full w-[48px] md:w-[120px] aspect-square" src="../img/chicken-512x512.jpg" alt="">
+            </div>
+            <div>
+              <a href="#" class="dark:text-[#FFFFFF] font-bold text-sm md:text-xl">مهدی قربان زاده</a>
+            </div>
+            <div>
+              <span class="text-primery-blue text-xs md:text-base ">HM-2000003</span>
+            </div>
+            <div>
+              <span class="text-[#969696] dark:text-[#969696] text-xs md:text-base">مدیر سایت</span>
+            </div>
+            <div class="w-full">
+              <a href="#" class="bg-[#F5F9FF] dark:bg-[#000000] text-primery-blue dark:text-dark-yellow flex justify-between w-full rounded-[10px] p-2 text-[10px] md:text-base">
+                مشاهده رزومه
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="dark:stroke-dark-yellow dark:fill-dark-yellow" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.5 6.52387C1.5 4.90668 1.90441 3.6736 2.67089 2.84815C3.42803 2.03277 4.64596 1.5 6.52387 1.5H15.7621C17.64 1.5 18.8579 2.03277 19.615 2.84815C20.3815 3.6736 20.7859 4.90668 20.7859 6.52387V18.0716C20.7859 19.6888 20.3815 20.9219 19.615 21.7473C18.8579 22.5627 17.64 23.0955 15.7621 23.0955H6.52387C4.64596 23.0955 3.42803 22.5627 2.67089 21.7473C1.90441 20.9219 1.5 19.6888 1.5 18.0716V6.52387ZM6.52387 0C4.36006 0 2.69107 0.622002 1.5717 1.82748C0.461674 3.02289 0 4.67674 0 6.52387V18.0716C0 19.9187 0.461674 21.5726 1.5717 22.768C2.69107 23.9735 4.36006 24.5955 6.52387 24.5955H15.7621C17.9259 24.5955 19.5949 23.9735 20.7142 22.768C21.8243 21.5726 22.2859 19.9187 22.2859 18.0716V6.52387C22.2859 4.67674 21.8243 3.02289 20.7142 1.82748C19.5949 0.622002 17.9259 0 15.7621 0H6.52387ZM14.7803 3.64062C14.7803 3.22641 14.4445 2.89062 14.0303 2.89062C13.6161 2.89062 13.2803 3.22641 13.2803 3.64062V5.95017C13.2803 7.63464 14.6554 9.00972 16.3398 9.00972H18.6494C19.0636 9.00972 19.3994 8.67393 19.3994 8.25972C19.3994 7.84551 19.0636 7.50972 18.6494 7.50972H16.3398C15.4838 7.50972 14.7803 6.80621 14.7803 5.95017V3.64062ZM5.77344 13.4531C5.77344 13.0389 6.10922 12.7031 6.52344 12.7031H11.1425C11.5567 12.7031 11.8925 13.0389 11.8925 13.4531C11.8925 13.8673 11.5567 14.2031 11.1425 14.2031H6.52344C6.10922 14.2031 5.77344 13.8673 5.77344 13.4531ZM6.52344 17.3203C6.10922 17.3203 5.77344 17.6561 5.77344 18.0703C5.77344 18.4845 6.10922 18.8203 6.52344 18.8203H15.7616C16.1758 18.8203 16.5116 18.4845 16.5116 18.0703C16.5116 17.6561 16.1758 17.3203 15.7616 17.3203H6.52344Z"
+                    fill="#0066FF" />
+                </svg>
+              </a>
+            </div>
+          </div>        
+        </div>
+        <div class="bg-[#FFFFFF] dark:bg-[#1A1A18] rounded-[20px] p-5">
+          <div class="flex flex-col gap-3 md:gap-5 items-center">
+            <div class="flex justify-center items-center">
+              <img class="rounded-full w-[48px] md:w-[120px] aspect-square" src="../img/chicken-512x512.jpg" alt="">
+            </div>
+            <div>
+              <a href="#" class="dark:text-[#FFFFFF] font-bold text-sm md:text-xl">مهدی قربان زاده</a>
+            </div>
+            <div>
+              <span class="text-primery-blue text-xs md:text-base ">HM-2000003</span>
+            </div>
+            <div>
+              <span class="text-[#969696] dark:text-[#969696] text-xs md:text-base">مدیر سایت</span>
+            </div>
+            <div class="w-full">
+              <a href="#" class="bg-[#F5F9FF] dark:bg-[#000000] text-primery-blue dark:text-dark-yellow flex justify-between w-full rounded-[10px] p-2 text-[10px] md:text-base">
+                مشاهده رزومه
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="dark:stroke-dark-yellow dark:fill-dark-yellow" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.5 6.52387C1.5 4.90668 1.90441 3.6736 2.67089 2.84815C3.42803 2.03277 4.64596 1.5 6.52387 1.5H15.7621C17.64 1.5 18.8579 2.03277 19.615 2.84815C20.3815 3.6736 20.7859 4.90668 20.7859 6.52387V18.0716C20.7859 19.6888 20.3815 20.9219 19.615 21.7473C18.8579 22.5627 17.64 23.0955 15.7621 23.0955H6.52387C4.64596 23.0955 3.42803 22.5627 2.67089 21.7473C1.90441 20.9219 1.5 19.6888 1.5 18.0716V6.52387ZM6.52387 0C4.36006 0 2.69107 0.622002 1.5717 1.82748C0.461674 3.02289 0 4.67674 0 6.52387V18.0716C0 19.9187 0.461674 21.5726 1.5717 22.768C2.69107 23.9735 4.36006 24.5955 6.52387 24.5955H15.7621C17.9259 24.5955 19.5949 23.9735 20.7142 22.768C21.8243 21.5726 22.2859 19.9187 22.2859 18.0716V6.52387C22.2859 4.67674 21.8243 3.02289 20.7142 1.82748C19.5949 0.622002 17.9259 0 15.7621 0H6.52387ZM14.7803 3.64062C14.7803 3.22641 14.4445 2.89062 14.0303 2.89062C13.6161 2.89062 13.2803 3.22641 13.2803 3.64062V5.95017C13.2803 7.63464 14.6554 9.00972 16.3398 9.00972H18.6494C19.0636 9.00972 19.3994 8.67393 19.3994 8.25972C19.3994 7.84551 19.0636 7.50972 18.6494 7.50972H16.3398C15.4838 7.50972 14.7803 6.80621 14.7803 5.95017V3.64062ZM5.77344 13.4531C5.77344 13.0389 6.10922 12.7031 6.52344 12.7031H11.1425C11.5567 12.7031 11.8925 13.0389 11.8925 13.4531C11.8925 13.8673 11.5567 14.2031 11.1425 14.2031H6.52344C6.10922 14.2031 5.77344 13.8673 5.77344 13.4531ZM6.52344 17.3203C6.10922 17.3203 5.77344 17.6561 5.77344 18.0703C5.77344 18.4845 6.10922 18.8203 6.52344 18.8203H15.7616C16.1758 18.8203 16.5116 18.4845 16.5116 18.0703C16.5116 17.6561 16.1758 17.3203 15.7616 17.3203H6.52344Z"
+                    fill="#0066FF" />
+                </svg>
+              </a>
+            </div>
+          </div>        
+        </div>
+        <div class="bg-[#FFFFFF] dark:bg-[#1A1A18] rounded-[20px] p-5">
+          <div class="flex flex-col gap-3 md:gap-5 items-center">
+            <div class="flex justify-center items-center">
+              <img class="rounded-full w-[48px] md:w-[120px] aspect-square" src="../img/chicken-512x512.jpg" alt="">
+            </div>
+            <div>
+              <a href="#" class="dark:text-[#FFFFFF] font-bold text-sm md:text-xl">مهدی قربان زاده</a>
+            </div>
+            <div>
+              <span class="text-primery-blue text-xs md:text-base ">HM-2000003</span>
+            </div>
+            <div>
+              <span class="text-[#969696] dark:text-[#969696] text-xs md:text-base">مدیر سایت</span>
+            </div>
+            <div class="w-full">
+              <a href="#" class="bg-[#F5F9FF] dark:bg-[#000000] text-primery-blue dark:text-dark-yellow flex justify-between w-full rounded-[10px] p-2 text-[10px] md:text-base">
+                مشاهده رزومه
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="dark:stroke-dark-yellow dark:fill-dark-yellow" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.5 6.52387C1.5 4.90668 1.90441 3.6736 2.67089 2.84815C3.42803 2.03277 4.64596 1.5 6.52387 1.5H15.7621C17.64 1.5 18.8579 2.03277 19.615 2.84815C20.3815 3.6736 20.7859 4.90668 20.7859 6.52387V18.0716C20.7859 19.6888 20.3815 20.9219 19.615 21.7473C18.8579 22.5627 17.64 23.0955 15.7621 23.0955H6.52387C4.64596 23.0955 3.42803 22.5627 2.67089 21.7473C1.90441 20.9219 1.5 19.6888 1.5 18.0716V6.52387ZM6.52387 0C4.36006 0 2.69107 0.622002 1.5717 1.82748C0.461674 3.02289 0 4.67674 0 6.52387V18.0716C0 19.9187 0.461674 21.5726 1.5717 22.768C2.69107 23.9735 4.36006 24.5955 6.52387 24.5955H15.7621C17.9259 24.5955 19.5949 23.9735 20.7142 22.768C21.8243 21.5726 22.2859 19.9187 22.2859 18.0716V6.52387C22.2859 4.67674 21.8243 3.02289 20.7142 1.82748C19.5949 0.622002 17.9259 0 15.7621 0H6.52387ZM14.7803 3.64062C14.7803 3.22641 14.4445 2.89062 14.0303 2.89062C13.6161 2.89062 13.2803 3.22641 13.2803 3.64062V5.95017C13.2803 7.63464 14.6554 9.00972 16.3398 9.00972H18.6494C19.0636 9.00972 19.3994 8.67393 19.3994 8.25972C19.3994 7.84551 19.0636 7.50972 18.6494 7.50972H16.3398C15.4838 7.50972 14.7803 6.80621 14.7803 5.95017V3.64062ZM5.77344 13.4531C5.77344 13.0389 6.10922 12.7031 6.52344 12.7031H11.1425C11.5567 12.7031 11.8925 13.0389 11.8925 13.4531C11.8925 13.8673 11.5567 14.2031 11.1425 14.2031H6.52344C6.10922 14.2031 5.77344 13.8673 5.77344 13.4531ZM6.52344 17.3203C6.10922 17.3203 5.77344 17.6561 5.77344 18.0703C5.77344 18.4845 6.10922 18.8203 6.52344 18.8203H15.7616C16.1758 18.8203 16.5116 18.4845 16.5116 18.0703C16.5116 17.6561 16.1758 17.3203 15.7616 17.3203H6.52344Z"
+                    fill="#0066FF" />
+                </svg>
+              </a>
+            </div>
+          </div>        
+        </div>
+        <div class="bg-[#FFFFFF] dark:bg-[#1A1A18] rounded-[20px] p-5">
+          <div class="flex flex-col gap-3 md:gap-5 items-center">
+            <div class="flex justify-center items-center">
+              <img class="rounded-full w-[48px] md:w-[120px] aspect-square" src="../img/chicken-512x512.jpg" alt="">
+            </div>
+            <div>
+              <a href="#" class="dark:text-[#FFFFFF] font-bold text-sm md:text-xl">مهدی قربان زاده</a>
+            </div>
+            <div>
+              <span class="text-primery-blue text-xs md:text-base ">HM-2000003</span>
+            </div>
+            <div>
+              <span class="text-[#969696] dark:text-[#969696] text-xs md:text-base">مدیر سایت</span>
+            </div>
+            <div class="w-full">
+              <a href="#" class="bg-[#F5F9FF] dark:bg-[#000000] text-primery-blue dark:text-dark-yellow flex justify-between w-full rounded-[10px] p-2 text-[10px] md:text-base">
+                مشاهده رزومه
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="dark:stroke-dark-yellow dark:fill-dark-yellow" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.5 6.52387C1.5 4.90668 1.90441 3.6736 2.67089 2.84815C3.42803 2.03277 4.64596 1.5 6.52387 1.5H15.7621C17.64 1.5 18.8579 2.03277 19.615 2.84815C20.3815 3.6736 20.7859 4.90668 20.7859 6.52387V18.0716C20.7859 19.6888 20.3815 20.9219 19.615 21.7473C18.8579 22.5627 17.64 23.0955 15.7621 23.0955H6.52387C4.64596 23.0955 3.42803 22.5627 2.67089 21.7473C1.90441 20.9219 1.5 19.6888 1.5 18.0716V6.52387ZM6.52387 0C4.36006 0 2.69107 0.622002 1.5717 1.82748C0.461674 3.02289 0 4.67674 0 6.52387V18.0716C0 19.9187 0.461674 21.5726 1.5717 22.768C2.69107 23.9735 4.36006 24.5955 6.52387 24.5955H15.7621C17.9259 24.5955 19.5949 23.9735 20.7142 22.768C21.8243 21.5726 22.2859 19.9187 22.2859 18.0716V6.52387C22.2859 4.67674 21.8243 3.02289 20.7142 1.82748C19.5949 0.622002 17.9259 0 15.7621 0H6.52387ZM14.7803 3.64062C14.7803 3.22641 14.4445 2.89062 14.0303 2.89062C13.6161 2.89062 13.2803 3.22641 13.2803 3.64062V5.95017C13.2803 7.63464 14.6554 9.00972 16.3398 9.00972H18.6494C19.0636 9.00972 19.3994 8.67393 19.3994 8.25972C19.3994 7.84551 19.0636 7.50972 18.6494 7.50972H16.3398C15.4838 7.50972 14.7803 6.80621 14.7803 5.95017V3.64062ZM5.77344 13.4531C5.77344 13.0389 6.10922 12.7031 6.52344 12.7031H11.1425C11.5567 12.7031 11.8925 13.0389 11.8925 13.4531C11.8925 13.8673 11.5567 14.2031 11.1425 14.2031H6.52344C6.10922 14.2031 5.77344 13.8673 5.77344 13.4531ZM6.52344 17.3203C6.10922 17.3203 5.77344 17.6561 5.77344 18.0703C5.77344 18.4845 6.10922 18.8203 6.52344 18.8203H15.7616C16.1758 18.8203 16.5116 18.4845 16.5116 18.0703C16.5116 17.6561 16.1758 17.3203 15.7616 17.3203H6.52344Z"
+                    fill="#0066FF" />
+                </svg>
+              </a>
+            </div>
+          </div>        
+        </div>
+        <div class="bg-[#FFFFFF] dark:bg-[#1A1A18] rounded-[20px] p-5">
+          <div class="flex flex-col gap-3 md:gap-5 items-center">
+            <div class="flex justify-center items-center">
+              <img class="rounded-full w-[48px] md:w-[120px] aspect-square" src="../img/chicken-512x512.jpg" alt="">
+            </div>
+            <div>
+              <a href="#" class="dark:text-[#FFFFFF] font-bold text-sm md:text-xl">مهدی قربان زاده</a>
+            </div>
+            <div>
+              <span class="text-primery-blue text-xs md:text-base ">HM-2000003</span>
+            </div>
+            <div>
+              <span class="text-[#969696] dark:text-[#969696] text-xs md:text-base">مدیر سایت</span>
+            </div>
+            <div class="w-full">
+              <a href="#" class="bg-[#F5F9FF] dark:bg-[#000000] text-primery-blue dark:text-dark-yellow flex justify-between w-full rounded-[10px] p-2 text-[10px] md:text-base">
+                مشاهده رزومه
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="dark:stroke-dark-yellow dark:fill-dark-yellow" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.5 6.52387C1.5 4.90668 1.90441 3.6736 2.67089 2.84815C3.42803 2.03277 4.64596 1.5 6.52387 1.5H15.7621C17.64 1.5 18.8579 2.03277 19.615 2.84815C20.3815 3.6736 20.7859 4.90668 20.7859 6.52387V18.0716C20.7859 19.6888 20.3815 20.9219 19.615 21.7473C18.8579 22.5627 17.64 23.0955 15.7621 23.0955H6.52387C4.64596 23.0955 3.42803 22.5627 2.67089 21.7473C1.90441 20.9219 1.5 19.6888 1.5 18.0716V6.52387ZM6.52387 0C4.36006 0 2.69107 0.622002 1.5717 1.82748C0.461674 3.02289 0 4.67674 0 6.52387V18.0716C0 19.9187 0.461674 21.5726 1.5717 22.768C2.69107 23.9735 4.36006 24.5955 6.52387 24.5955H15.7621C17.9259 24.5955 19.5949 23.9735 20.7142 22.768C21.8243 21.5726 22.2859 19.9187 22.2859 18.0716V6.52387C22.2859 4.67674 21.8243 3.02289 20.7142 1.82748C19.5949 0.622002 17.9259 0 15.7621 0H6.52387ZM14.7803 3.64062C14.7803 3.22641 14.4445 2.89062 14.0303 2.89062C13.6161 2.89062 13.2803 3.22641 13.2803 3.64062V5.95017C13.2803 7.63464 14.6554 9.00972 16.3398 9.00972H18.6494C19.0636 9.00972 19.3994 8.67393 19.3994 8.25972C19.3994 7.84551 19.0636 7.50972 18.6494 7.50972H16.3398C15.4838 7.50972 14.7803 6.80621 14.7803 5.95017V3.64062ZM5.77344 13.4531C5.77344 13.0389 6.10922 12.7031 6.52344 12.7031H11.1425C11.5567 12.7031 11.8925 13.0389 11.8925 13.4531C11.8925 13.8673 11.5567 14.2031 11.1425 14.2031H6.52344C6.10922 14.2031 5.77344 13.8673 5.77344 13.4531ZM6.52344 17.3203C6.10922 17.3203 5.77344 17.6561 5.77344 18.0703C5.77344 18.4845 6.10922 18.8203 6.52344 18.8203H15.7616C16.1758 18.8203 16.5116 18.4845 16.5116 18.0703C16.5116 17.6561 16.1758 17.3203 15.7616 17.3203H6.52344Z"
+                    fill="#0066FF" />
+                </svg>
+              </a>
+            </div>
+          </div>        
+        </div>
+        <div class="bg-[#FFFFFF] dark:bg-[#1A1A18] rounded-[20px] p-5">
+          <div class="flex flex-col gap-3 md:gap-5 items-center">
+            <div class="flex justify-center items-center">
+              <img class="rounded-full w-[48px] md:w-[120px] aspect-square" src="../img/chicken-512x512.jpg" alt="">
+            </div>
+            <div>
+              <a href="#" class="dark:text-[#FFFFFF] font-bold text-sm md:text-xl">مهدی قربان زاده</a>
+            </div>
+            <div>
+              <span class="text-primery-blue text-xs md:text-base ">HM-2000003</span>
+            </div>
+            <div>
+              <span class="text-[#969696] dark:text-[#969696] text-xs md:text-base">مدیر سایت</span>
+            </div>
+            <div class="w-full">
+              <a href="#" class="bg-[#F5F9FF] dark:bg-[#000000] text-primery-blue dark:text-dark-yellow flex justify-between w-full rounded-[10px] p-2 text-[10px] md:text-base">
+                مشاهده رزومه
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="dark:stroke-dark-yellow dark:fill-dark-yellow" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.5 6.52387C1.5 4.90668 1.90441 3.6736 2.67089 2.84815C3.42803 2.03277 4.64596 1.5 6.52387 1.5H15.7621C17.64 1.5 18.8579 2.03277 19.615 2.84815C20.3815 3.6736 20.7859 4.90668 20.7859 6.52387V18.0716C20.7859 19.6888 20.3815 20.9219 19.615 21.7473C18.8579 22.5627 17.64 23.0955 15.7621 23.0955H6.52387C4.64596 23.0955 3.42803 22.5627 2.67089 21.7473C1.90441 20.9219 1.5 19.6888 1.5 18.0716V6.52387ZM6.52387 0C4.36006 0 2.69107 0.622002 1.5717 1.82748C0.461674 3.02289 0 4.67674 0 6.52387V18.0716C0 19.9187 0.461674 21.5726 1.5717 22.768C2.69107 23.9735 4.36006 24.5955 6.52387 24.5955H15.7621C17.9259 24.5955 19.5949 23.9735 20.7142 22.768C21.8243 21.5726 22.2859 19.9187 22.2859 18.0716V6.52387C22.2859 4.67674 21.8243 3.02289 20.7142 1.82748C19.5949 0.622002 17.9259 0 15.7621 0H6.52387ZM14.7803 3.64062C14.7803 3.22641 14.4445 2.89062 14.0303 2.89062C13.6161 2.89062 13.2803 3.22641 13.2803 3.64062V5.95017C13.2803 7.63464 14.6554 9.00972 16.3398 9.00972H18.6494C19.0636 9.00972 19.3994 8.67393 19.3994 8.25972C19.3994 7.84551 19.0636 7.50972 18.6494 7.50972H16.3398C15.4838 7.50972 14.7803 6.80621 14.7803 5.95017V3.64062ZM5.77344 13.4531C5.77344 13.0389 6.10922 12.7031 6.52344 12.7031H11.1425C11.5567 12.7031 11.8925 13.0389 11.8925 13.4531C11.8925 13.8673 11.5567 14.2031 11.1425 14.2031H6.52344C6.10922 14.2031 5.77344 13.8673 5.77344 13.4531ZM6.52344 17.3203C6.10922 17.3203 5.77344 17.6561 5.77344 18.0703C5.77344 18.4845 6.10922 18.8203 6.52344 18.8203H15.7616C16.1758 18.8203 16.5116 18.4845 16.5116 18.0703C16.5116 17.6561 16.1758 17.3203 15.7616 17.3203H6.52344Z"
+                    fill="#0066FF" />
+                </svg>
+              </a>
+            </div>
+          </div>        
+        </div>
+        <div class="bg-[#FFFFFF] dark:bg-[#1A1A18] rounded-[20px] p-5">
+          <div class="flex flex-col gap-3 md:gap-5 items-center">
+            <div class="flex justify-center items-center">
+              <img class="rounded-full w-[48px] md:w-[120px] aspect-square" src="../img/chicken-512x512.jpg" alt="">
+            </div>
+            <div>
+              <a href="#" class="dark:text-[#FFFFFF] font-bold text-sm md:text-xl">مهدی قربان زاده</a>
+            </div>
+            <div>
+              <span class="text-primery-blue text-xs md:text-base ">HM-2000003</span>
+            </div>
+            <div>
+              <span class="text-[#969696] dark:text-[#969696] text-xs md:text-base">مدیر سایت</span>
+            </div>
+            <div class="w-full">
+              <a href="#" class="bg-[#F5F9FF] dark:bg-[#000000] text-primery-blue dark:text-dark-yellow flex justify-between w-full rounded-[10px] p-2 text-[10px] md:text-base">
+                مشاهده رزومه
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="dark:stroke-dark-yellow dark:fill-dark-yellow" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.5 6.52387C1.5 4.90668 1.90441 3.6736 2.67089 2.84815C3.42803 2.03277 4.64596 1.5 6.52387 1.5H15.7621C17.64 1.5 18.8579 2.03277 19.615 2.84815C20.3815 3.6736 20.7859 4.90668 20.7859 6.52387V18.0716C20.7859 19.6888 20.3815 20.9219 19.615 21.7473C18.8579 22.5627 17.64 23.0955 15.7621 23.0955H6.52387C4.64596 23.0955 3.42803 22.5627 2.67089 21.7473C1.90441 20.9219 1.5 19.6888 1.5 18.0716V6.52387ZM6.52387 0C4.36006 0 2.69107 0.622002 1.5717 1.82748C0.461674 3.02289 0 4.67674 0 6.52387V18.0716C0 19.9187 0.461674 21.5726 1.5717 22.768C2.69107 23.9735 4.36006 24.5955 6.52387 24.5955H15.7621C17.9259 24.5955 19.5949 23.9735 20.7142 22.768C21.8243 21.5726 22.2859 19.9187 22.2859 18.0716V6.52387C22.2859 4.67674 21.8243 3.02289 20.7142 1.82748C19.5949 0.622002 17.9259 0 15.7621 0H6.52387ZM14.7803 3.64062C14.7803 3.22641 14.4445 2.89062 14.0303 2.89062C13.6161 2.89062 13.2803 3.22641 13.2803 3.64062V5.95017C13.2803 7.63464 14.6554 9.00972 16.3398 9.00972H18.6494C19.0636 9.00972 19.3994 8.67393 19.3994 8.25972C19.3994 7.84551 19.0636 7.50972 18.6494 7.50972H16.3398C15.4838 7.50972 14.7803 6.80621 14.7803 5.95017V3.64062ZM5.77344 13.4531C5.77344 13.0389 6.10922 12.7031 6.52344 12.7031H11.1425C11.5567 12.7031 11.8925 13.0389 11.8925 13.4531C11.8925 13.8673 11.5567 14.2031 11.1425 14.2031H6.52344C6.10922 14.2031 5.77344 13.8673 5.77344 13.4531ZM6.52344 17.3203C6.10922 17.3203 5.77344 17.6561 5.77344 18.0703C5.77344 18.4845 6.10922 18.8203 6.52344 18.8203H15.7616C16.1758 18.8203 16.5116 18.4845 16.5116 18.0703C16.5116 17.6561 16.1758 17.3203 15.7616 17.3203H6.52344Z"
+                    fill="#0066FF" />
+                </svg>
+              </a>
+            </div>
+          </div>        
+        </div>
+        <div class="bg-[#FFFFFF] dark:bg-[#1A1A18] rounded-[20px] p-5">
+          <div class="flex flex-col gap-3 md:gap-5 items-center">
+            <div class="flex justify-center items-center">
+              <img class="rounded-full w-[48px] md:w-[120px] aspect-square" src="../img/chicken-512x512.jpg" alt="">
+            </div>
+            <div>
+              <a href="#" class="dark:text-[#FFFFFF] font-bold text-sm md:text-xl">مهدی قربان زاده</a>
+            </div>
+            <div>
+              <span class="text-primery-blue text-xs md:text-base ">HM-2000003</span>
+            </div>
+            <div>
+              <span class="text-[#969696] dark:text-[#969696] text-xs md:text-base">مدیر سایت</span>
+            </div>
+            <div class="w-full">
+              <a href="#" class="bg-[#F5F9FF] dark:bg-[#000000] text-primery-blue dark:text-dark-yellow flex justify-between w-full rounded-[10px] p-2 text-[10px] md:text-base">
+                مشاهده رزومه
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="dark:stroke-dark-yellow dark:fill-dark-yellow" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.5 6.52387C1.5 4.90668 1.90441 3.6736 2.67089 2.84815C3.42803 2.03277 4.64596 1.5 6.52387 1.5H15.7621C17.64 1.5 18.8579 2.03277 19.615 2.84815C20.3815 3.6736 20.7859 4.90668 20.7859 6.52387V18.0716C20.7859 19.6888 20.3815 20.9219 19.615 21.7473C18.8579 22.5627 17.64 23.0955 15.7621 23.0955H6.52387C4.64596 23.0955 3.42803 22.5627 2.67089 21.7473C1.90441 20.9219 1.5 19.6888 1.5 18.0716V6.52387ZM6.52387 0C4.36006 0 2.69107 0.622002 1.5717 1.82748C0.461674 3.02289 0 4.67674 0 6.52387V18.0716C0 19.9187 0.461674 21.5726 1.5717 22.768C2.69107 23.9735 4.36006 24.5955 6.52387 24.5955H15.7621C17.9259 24.5955 19.5949 23.9735 20.7142 22.768C21.8243 21.5726 22.2859 19.9187 22.2859 18.0716V6.52387C22.2859 4.67674 21.8243 3.02289 20.7142 1.82748C19.5949 0.622002 17.9259 0 15.7621 0H6.52387ZM14.7803 3.64062C14.7803 3.22641 14.4445 2.89062 14.0303 2.89062C13.6161 2.89062 13.2803 3.22641 13.2803 3.64062V5.95017C13.2803 7.63464 14.6554 9.00972 16.3398 9.00972H18.6494C19.0636 9.00972 19.3994 8.67393 19.3994 8.25972C19.3994 7.84551 19.0636 7.50972 18.6494 7.50972H16.3398C15.4838 7.50972 14.7803 6.80621 14.7803 5.95017V3.64062ZM5.77344 13.4531C5.77344 13.0389 6.10922 12.7031 6.52344 12.7031H11.1425C11.5567 12.7031 11.8925 13.0389 11.8925 13.4531C11.8925 13.8673 11.5567 14.2031 11.1425 14.2031H6.52344C6.10922 14.2031 5.77344 13.8673 5.77344 13.4531ZM6.52344 17.3203C6.10922 17.3203 5.77344 17.6561 5.77344 18.0703C5.77344 18.4845 6.10922 18.8203 6.52344 18.8203H15.7616C16.1758 18.8203 16.5116 18.4845 16.5116 18.0703C16.5116 17.6561 16.1758 17.3203 15.7616 17.3203H6.52344Z"
+                    fill="#0066FF" />
+                </svg>
+              </a>
+            </div>
+          </div>        
+        </div>
+        <div class="bg-[#FFFFFF] dark:bg-[#1A1A18] rounded-[20px] p-5">
+          <div class="flex flex-col gap-3 md:gap-5 items-center">
+            <div class="flex justify-center items-center">
+              <img class="rounded-full w-[48px] md:w-[120px] aspect-square" src="../img/chicken-512x512.jpg" alt="">
+            </div>
+            <div>
+              <a href="#" class="dark:text-[#FFFFFF] font-bold text-sm md:text-xl">مهدی قربان زاده</a>
+            </div>
+            <div>
+              <span class="text-primery-blue text-xs md:text-base ">HM-2000003</span>
+            </div>
+            <div>
+              <span class="text-[#969696] dark:text-[#969696] text-xs md:text-base">مدیر سایت</span>
+            </div>
+            <div class="w-full">
+              <a href="#" class="bg-[#F5F9FF] dark:bg-[#000000] text-primery-blue dark:text-dark-yellow flex justify-between w-full rounded-[10px] p-2 text-[10px] md:text-base">
+                مشاهده رزومه
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="dark:stroke-dark-yellow dark:fill-dark-yellow" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.5 6.52387C1.5 4.90668 1.90441 3.6736 2.67089 2.84815C3.42803 2.03277 4.64596 1.5 6.52387 1.5H15.7621C17.64 1.5 18.8579 2.03277 19.615 2.84815C20.3815 3.6736 20.7859 4.90668 20.7859 6.52387V18.0716C20.7859 19.6888 20.3815 20.9219 19.615 21.7473C18.8579 22.5627 17.64 23.0955 15.7621 23.0955H6.52387C4.64596 23.0955 3.42803 22.5627 2.67089 21.7473C1.90441 20.9219 1.5 19.6888 1.5 18.0716V6.52387ZM6.52387 0C4.36006 0 2.69107 0.622002 1.5717 1.82748C0.461674 3.02289 0 4.67674 0 6.52387V18.0716C0 19.9187 0.461674 21.5726 1.5717 22.768C2.69107 23.9735 4.36006 24.5955 6.52387 24.5955H15.7621C17.9259 24.5955 19.5949 23.9735 20.7142 22.768C21.8243 21.5726 22.2859 19.9187 22.2859 18.0716V6.52387C22.2859 4.67674 21.8243 3.02289 20.7142 1.82748C19.5949 0.622002 17.9259 0 15.7621 0H6.52387ZM14.7803 3.64062C14.7803 3.22641 14.4445 2.89062 14.0303 2.89062C13.6161 2.89062 13.2803 3.22641 13.2803 3.64062V5.95017C13.2803 7.63464 14.6554 9.00972 16.3398 9.00972H18.6494C19.0636 9.00972 19.3994 8.67393 19.3994 8.25972C19.3994 7.84551 19.0636 7.50972 18.6494 7.50972H16.3398C15.4838 7.50972 14.7803 6.80621 14.7803 5.95017V3.64062ZM5.77344 13.4531C5.77344 13.0389 6.10922 12.7031 6.52344 12.7031H11.1425C11.5567 12.7031 11.8925 13.0389 11.8925 13.4531C11.8925 13.8673 11.5567 14.2031 11.1425 14.2031H6.52344C6.10922 14.2031 5.77344 13.8673 5.77344 13.4531ZM6.52344 17.3203C6.10922 17.3203 5.77344 17.6561 5.77344 18.0703C5.77344 18.4845 6.10922 18.8203 6.52344 18.8203H15.7616C16.1758 18.8203 16.5116 18.4845 16.5116 18.0703C16.5116 17.6561 16.1758 17.3203 15.7616 17.3203H6.52344Z"
+                    fill="#0066FF" />
+                </svg>
+              </a>
+            </div>
+          </div>        
+        </div>
+        <div class="bg-[#FFFFFF] dark:bg-[#1A1A18] rounded-[20px] p-5">
+          <div class="flex flex-col gap-3 md:gap-5 items-center">
+            <div class="flex justify-center items-center">
+              <img class="rounded-full w-[48px] md:w-[120px] aspect-square" src="../img/chicken-512x512.jpg" alt="">
+            </div>
+            <div>
+              <a href="#" class="dark:text-[#FFFFFF] font-bold text-sm md:text-xl">مهدی قربان زاده</a>
+            </div>
+            <div>
+              <span class="text-primery-blue text-xs md:text-base ">HM-2000003</span>
+            </div>
+            <div>
+              <span class="text-[#969696] dark:text-[#969696] text-xs md:text-base">مدیر سایت</span>
+            </div>
+            <div class="w-full">
+              <a href="#" class="bg-[#F5F9FF] dark:bg-[#000000] text-primery-blue dark:text-dark-yellow flex justify-between w-full rounded-[10px] p-2 text-[10px] md:text-base">
+                مشاهده رزومه
+                <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="dark:stroke-dark-yellow dark:fill-dark-yellow" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.5 6.52387C1.5 4.90668 1.90441 3.6736 2.67089 2.84815C3.42803 2.03277 4.64596 1.5 6.52387 1.5H15.7621C17.64 1.5 18.8579 2.03277 19.615 2.84815C20.3815 3.6736 20.7859 4.90668 20.7859 6.52387V18.0716C20.7859 19.6888 20.3815 20.9219 19.615 21.7473C18.8579 22.5627 17.64 23.0955 15.7621 23.0955H6.52387C4.64596 23.0955 3.42803 22.5627 2.67089 21.7473C1.90441 20.9219 1.5 19.6888 1.5 18.0716V6.52387ZM6.52387 0C4.36006 0 2.69107 0.622002 1.5717 1.82748C0.461674 3.02289 0 4.67674 0 6.52387V18.0716C0 19.9187 0.461674 21.5726 1.5717 22.768C2.69107 23.9735 4.36006 24.5955 6.52387 24.5955H15.7621C17.9259 24.5955 19.5949 23.9735 20.7142 22.768C21.8243 21.5726 22.2859 19.9187 22.2859 18.0716V6.52387C22.2859 4.67674 21.8243 3.02289 20.7142 1.82748C19.5949 0.622002 17.9259 0 15.7621 0H6.52387ZM14.7803 3.64062C14.7803 3.22641 14.4445 2.89062 14.0303 2.89062C13.6161 2.89062 13.2803 3.22641 13.2803 3.64062V5.95017C13.2803 7.63464 14.6554 9.00972 16.3398 9.00972H18.6494C19.0636 9.00972 19.3994 8.67393 19.3994 8.25972C19.3994 7.84551 19.0636 7.50972 18.6494 7.50972H16.3398C15.4838 7.50972 14.7803 6.80621 14.7803 5.95017V3.64062ZM5.77344 13.4531C5.77344 13.0389 6.10922 12.7031 6.52344 12.7031H11.1425C11.5567 12.7031 11.8925 13.0389 11.8925 13.4531C11.8925 13.8673 11.5567 14.2031 11.1425 14.2031H6.52344C6.10922 14.2031 5.77344 13.8673 5.77344 13.4531ZM6.52344 17.3203C6.10922 17.3203 5.77344 17.6561 5.77344 18.0703C5.77344 18.4845 6.10922 18.8203 6.52344 18.8203H15.7616C16.1758 18.8203 16.5116 18.4845 16.5116 18.0703C16.5116 17.6561 16.1758 17.3203 15.7616 17.3203H6.52344Z"
+                    fill="#0066FF" />
+                </svg>
+              </a>
+            </div>
+          </div>        
+        </div>
+        
+
+      </div>
+    </section>
+
+    <footer class="max-w-[1500px] mx-auto p-4 lg:p-9 mt-16 ">
+      <div class="flex-wrap flex justify-between  items-ctener gap-1 md:gap-2 mx-auto w-full bg-white dark:bg-[#1A1A18] p-3 mb-10 rounded-2xl">
+          <a href="https://irpsc.com" style="width:55px ;" target="_blank " title="وزارت تعاون کار و رفاه اجتماعی">
+              <img src="https://irpsc.com/img-icon/vezarat.png">
+          </a>
+          <a class="active" href="#" target="_blank " style="width:55px ;" title="نماد اعتماد الکترونیک">
+              <img src="https://irpsc.com/img-icon/enamad.png" alt="نماد اعتماد الکترونیک">
+
+          </a>
+          <a href="https://irpsc.com" target="_blank " style="width:55px ;" title="ثبت اسناد و املاک کشور">
+              <img src="https://irpsc.com/img-icon/qazaii.png" alt="ثبت اسناد و املاک کشور">
+          </a>
+          <a href="https://video.irpsc.com" target="_blank " style="width:55px ;" title="مرکز آموزش ویدئویی">
+              <img src="https://irpsc.com/img-icon/video.png" alt="مرکز آموزش ویدئویی">
+          </a>
+          <a href="https://faq.irpsc.com" target="_blank " style="width:55px ;" title="انجمن پرسش و پاسخ">
+              <img src="https://irpsc.com/img-icon/faq.png" alt="انجمن پرسش و پاسخ">
+          </a>
+          <a href="https://Shop.irpsc.com" target="_blank " style="width:55px ;" title="فروشگاه ملی">
+              <img src="https://irpsc.com/img-icon/shop.png" alt="فروشگاه ملی">
+          </a>
+          <a href="https://supply.irpsc.com" target="_blank " style="width:55px ;" title="تولید کنندگان">
+              <img src="https://irpsc.com/img-icon/supply.png" alt="تولید کنندگان">
+              </a><a href="https://crm.irpsc.com" target="_blank " style="width:55px ;" title="مدیریت بر مدیران">
+                  <img src="https://irpsc.com/img-icon/crm.png" alt="مدیریت بر مدیران">
+              </a>
+              <a href="https://target.irpsc.com" target="_blank " style="width:55px ;" title="نگرش ملی">
+                  <img src="https://irpsc.com/img-icon/target.png" alt="نگرش ملی">
+              </a>
+              <a href="https://animal.irpsc.com" target="_blank " style="width:55px ;" title="حیوانات و دامپزشک">
+                  <img src="https://irpsc.com/img-icon/animal.png" alt="حیوانات و دامپزشک">
+              </a>
+              <a href="https://irpsc.com" target="_blank " style="width:55px ;" title="رسانه ملی">
+                  <img src="https://irpsc.com/img-icon/irpsc.png" alt="رسانه ملی">
+              </a>
+              <a href="https://meta.irpsc.com" target="_blank " style="width:55px ;" title="اخبار متا">
+                  <img src="https://irpsc.com/img-icon/meta.png" alt="اخبار متا">
+              </a>
+              <a href="https://uni.irpsc.com" target="_blank " style="width:55px ;" title="دانشگاه متاورس">
+                  <img src="https://irpsc.com/img-icon/uni.png" alt="دانشگاه متاورس">
+              </a>
+              <a href="https://crm.irpsc.com/knowledgebase" target="_blank " style="width:55px ;" title="استخدام | دانش محور">
+                  <img src="https://irpsc.com/img-icon/knowledge.png" alt="استخدام | دانش محور">
+              </a>
+              <a href="https://sale.irpsc.com" target="_blank " style="width:55px ;" title="فروشگاه مجازی حم">
+                  <img src="https://irpsc.com/img-icon/sale.png" alt="فروشگاه مجازی حم">
+              </a>
+              <a href="https://ad.irpsc.com" target="_blank " style="width:55px ;" title="تبلیغات ملی">
+                  <img src="https://irpsc.com/img-icon/ad.png" alt="تبلیغات ملی">
+              </a>
+              <a href="https://nft.irpsc.com" target="_blank " style="width:55px ;" title="بازار NFT">
+                  <img src="https://irpsc.com/img-icon/nft.png">
+              </a>
+              <a href="https://rgb.irpsc.com" target="_blank " style="width:55px ;" title="متاورس رنگ">
+                  <img src="https://irpsc.com/img-icon/rgb.png" alt="متاورس رنگ">
+              </a>
+              <a href="https://3d.irpsc.com" target="_blank " style="width:55px ;" title="سه بعدی متا">
+                  <img src="https://irpsc.com/img-icon/3d.png" alt="سه بعدی متا">
+              </a>
+              <a href="https://3d.irpsc.com" target="_blank " style="width:55px ;" title="تونل زمان">
+                  <img src="https://accounts.irpsc.com/images/logo/accounts.gif" alt="تونل زمان">
+              </a>
+              <a title="خانه" style="width:55px ;">
+                  <img src="https://irpsc.com/img-icon/home-soon.png">
+              </a>
+      </div>
+      <div class="bg-[#FFFFFF] dark:bg-[#1A1A18] w-full rounded-[10px] p-7 flex flex-col gap-10 lg:flex-row justify-between mb-5">
+          <div class="flex flex-col gap-10 w-full lg:w-[60%]">
+              <div class="flex gap-2">
+                  <img src="https://accounts.irpsc.com/images/logo/accounts.png" alt="تونل زمان" class="w-[71px] h-[71px] aspect-square ">
+                  <div class="text-[#4C4C4C] dark:text-[#FFFFFF] text-xl md:text-2xl flex flex-col justify-between">
+                      <p>
+                          متاورس ملی
+                      </p>
+                      <p>رهبری جهانی در دنیایی موازی </p>
+                  </div>
+              </div>
+              <div class="text-[#4C4C4C] dark:text-[#D4D4D4] font-normal text-xl text-justify leading-10">
+                  <p>
+                      سامانه "تونل زمان" توسط هلدینگ تعاونی‌های زنجیره تامین بهشت بهشت طراحی شده است. این سامانه
+                      با هدف یکپارچه‌سازی دسترسی کاربران به تمامی سامانه‌های تحت مدیریت این زنجیره توسعه یافته
+                      است. با استفاده از "تونل زمان"، کاربران می‌توانند به راحتی ثبت‌نام یا وارد شوند و پس از
+                      ورود، به تمامی سامانه‌های مرتبط دسترسی پیدا کنند. این یکپارچه‌سازی به کاربران امکان می‌دهد
+                      تا به صورت متمرکز و آسان از خدمات مختلف تعاونی‌ها بهره‌مند شوند.
+
+                  </p>
+              </div>
+          </div>
+          <div class="w-full lg:w-[30%]">
+              <div class="flex flex-col items-center justify-center gap-8">
+                  <p class="text-2xl text-[#4C4C4C] dark:text-[#D4D4D4]">به شبکه های ما ملحق شوید.</p>
+                  <div class="grid grid-cols-5  gap-3 md:gap-4">
+                      <a href="https://rgb.irpsc.com/[lang]/undefined">
+                          <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="64" fill="url(#pattern0_611_7340)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_611_7340" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_611_7340" transform="matrix(0.00793651 0 0 0.0078125 -0.00793651 0)"></use>
+                                  </pattern>
+                                  <image id="image0_611_7340" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAALVBMVEVHcExIWZJIWZJIWZJIWZJIWZL+/v9FVpB/jLP29/lteqhYaJzf4uyYosK/xdhirnaTAAAABXRSTlMA3WgkuorNRlkAAAHrSURBVGje7dq/TsJAHAfwC7wBpDsmuuMrkPgAJTQ3NHG8SKJsTV1cBU10bKxhNwJxMyGAjiQEd10cYdGHsFDQFuj17r7GP8l99/vkm2tpj/xKCCHZbcNSiFkqknmyW5ZicqGgvD4QZuszhjpgFrAC8wpZAwEqRZKxoBTILgbkyQ4GlMkeBlSIgQEmscBoQAM/DVD3MyoAtXuN12Xu5QGn+z5iy1RvpAHncsgYAtx5kfXMlwYeYuvlG9hTBgH0kWHAagHpPdhnYIMzELCHIHCyul52DwYMbHCKNpiCDdb3UBI49kBg/SJIArH70G/6o6bfVAZq561eu9VuSz0To7fBm+tSx3UdGYAONl9/pQY1lfcCRQFLA38AgC6j3Q/SiQD9RQQB2nkKMor8jJ8WET0f3LLNORQEKAokNqhZYANRILHBkQM2EAUSGxzIN6jGgCu0wTW6B2P0KozR+2CCNpj8eoNntQaeNPB9DVbOKNU62CB6QElr4AWJ7EIYYcDqNoJcfAEvjTDCj3XqUkojp7S6M0vsX5/cMa+u9GrTgAY0oAENaEADGtDAfwQMDDDTh3V8oJI+LuQD5fSBJR/Ip49M+UAhfWjLBcxi+tiYC+QEBtc8YD64TttGHlASGd5zgNxy/M/9fCARCD8f+ACM50VnIzP5KgAAAABJRU5ErkJggg=="></image>
+                              </defs>
+                          </svg>
+                      </a>
+                      <a href="#">
+
+                          <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="64" fill="url(#pattern0_631_6004)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6004" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6004" transform="matrix(0.00793651 0 0 0.0078125 -0.00793651 0)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6004" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAALVBMVEVHcEz1giD1giD1giD1giD1giD2hyj////1gR35qGT3lkT/9u781bT7v43+6NXBC4QJAAAABnRSTlMA/98pbr46zswfAAAD6UlEQVRo3u2az0obQRzHF/QFNugyCh5C+wBS6F0LfQBpXyAXMSF6XWRNYC5hDPXgxfzxD3gJ0ZheQ6sVcjFosdCLMdZeG6zxHZr9PzOZmczu0Ft+J1fcT35/vzOTUdM0bep9Uo9hiY+LmmNT7/SY9tolvNVj2wf7/elkfEBiaQh4oyvYq2EGVlQAs4vatK5kS2oR2DEsqwFmtBU1wKyWVAMkNF3RJoAJYAL4LwCAEFQCpCuntVUQCUIAwL55fjm4rdYAjAkombZZg548ggAgFzC0y+tjFN8Dxy6qQMUDO5DrNajiwdBejqGKB3YYEgSRB0PCLlTyQMYHsQem+a2u5oFpPq2peWCaN4oemNYdjDBM561RwlZdfpwzp5XDx2ca8hRBUHSEjMzhj5Z8ELSkAVuWjOZ36SBYmoh0NH9AOPEXRhbVQrOPAfLl6KqM0ngYX+LIerqD5XE3BgCk+xIuiBYWsN4f74JwYQFnmAtQppWbvUothTEKR6ELZblptC4HPUzRi51xvcCYRmvwEOrxetBQ+bq8Hli3oZKFQVxF0YPBnk/IBJXIRVKki4BwJk4jV5ECPQ7zyEwjXxN9PQbZYKpT0TTxyVtdVwMXfkZTZesBUln4CqOpsld5UOwLYhCuC94Igs/+L8oR1wXrzlOGFr8O4pUp5/nc5fcS6cERvSZ4LviVtOpjPDBOT34/M1wI0tgep0hDQckc9EddKHELObKwQARPMD3OkTFsSWkixBTdmyA/htEkaOP02K0c6PKSoHH0uEVN0AYvCTxZD4XInaBtPyeSABSqgKvnhvecT8kBAAqCcF8JmrQsGQLSf5ExZDlZ5C9tC+QEbXOyyAdAcoIMr7Kb0gB6grrsXhQA5vt4EkCD3YsjAGCkAKUObthZdhlGAOnHQW+NjMFtnjl2GWjAnO33i0sotvBO8J/+CAGGW/0bSCiZ63WHWUcKsI4LeqDGbXwgN0UA1MWbBywQTw2msJIAP07vr/xH90M3mONEAhZMonlQB8d9Yu5USMBGoAL33mEc+9AdZieRgEYAaONA5x2w3WJ1Em9lcqu9g9fRz8i91Np4RQjZPT6PbYEHdAhF4p0Oa7cmTKJe6GABGV1WLwvLGHSf075AAjDfopawEt7/JdYwULPQJXcSfiM4rQgkAEaW3FP6WXUAaF/CA0/G/POJP485SNO4+4MzOwv5XaosriY1WEcPCgAKB+dWuE8mAEAGoMPCSbUW/kWm4ljV+6LMsb0xsk4em5Br0DtRBT8LAIA+htmmRwBMvlOdACaAeICk2vsJ9cu6ZTXAjPqFpfKVqfKlrfK1sfrFtfLVufrlvdq/D/wDc7Yryq2EeusAAAAASUVORK5CYII="></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="https://www.instagram.com/rgb.irpsc/">
+
+                          <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="64" fill="url(#pattern0_631_6005)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6005" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6005" transform="matrix(0.00793651 0 0 0.0078125 -0.00793651 0)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6005" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAM1BMVEVHcEwzZpkwZJh8nb4zZpkzZpn///8zZpk8bZ4zZpnj6vFLeKXE0+Jki7Lx9fiovtSQrMg/h7JHAAAACnRSTlMA////y3X//vov4FK1eAAABQ1JREFUeNrtm9mS4ygQRU1iG8wi+P+vbeQSCGR2IRMz4Yx+6agqcZRsNxfdbn/2etwpQV8yQu+P1803MzxB5EsAZDUUILzufz9A3yRAd0fwoOir9h6fEKCP7f0pImiCEfLnA+P/KeMjOwsPNNEedgHOMuOCB0FzXTDVAWYd3iiZ6QIDMHcGELkRMhkAoR/AD+C/AwDVdgGAeSjlUuIak5yiWog6AAAqtWDL8qyxZVmY0JJWMdQAAOJa1I3tYwjNEYwAAK7Zs8uY5nAaACjuHP6NgCmcAwCunqdMFZxQAADJnieNSTgBcH78laAbAILpN3tL6ZpjQCuzY/0/zPkgBxD4n2nJ649CLhWrm4UMgD8+w7z+fIUVFPmbl6VXYhoAuHvAUrGfI6cnV24iBG0HoKpuFeUMOwLdDADY0Xe8/scuSi7EFMA+AaxrfHjfn+Y1rA9Eqwd0zR5Krx+slJK+I1PPSQDsDtA9ry/Fe0xFvaUkmjwAurh8c+9v6ZX3n4QLEgBUbH+FeyZA+WegexfdAABy6XcAovsJpGB3QfxZCQBLXXbA5wHpnWDrHDiHxOcgMQXCbsHC0JQboweMI4B1J64HsE5UWZmKza33NqFwIEF3DfMek+eeFgUAvuTWTUymBhJUutOH+/4U9WvAPiF1CHEVESpsV1/b+bddw3YRRFdh3AM4t2wApWQqw9YJRg6YidmA7JKOrqgsQPQayMrU3Qnr2oTj40YAABc5AeiuTqh8n1aAwvjRy3skQDj+n0pdNWiWYCQAFd7Gw1alUo49LkUvBNjXn5D+8RcEcPo6AHfCLPoQ84G3OY4qfByAmwCz4SNRrPZvgEsAnLyKX5K7jg5dMAzAOSB1R7ktIq7xgF0BaZ1sfyM8w4cBqLJKUTH5NQrAioSMSolLuUEA7uE6nXoC64KFj78LXIiRi1TcL+ELAHRFqOYEqb7gNlQVSt1dVgpdB5CX6RcCiBoAiPzW/8YDNWvAHdcXAGS17Vd2Aa7JWMgLzwFZCJf8eQooRwHkw+wwLmUX3AVVt6GOKYZRAO6cT7rA5VYv0gPFxJWTTCHiMACXN0lljtQzOknjAPbkZV4VH+ZonCre07cfcYEfNC+XxQWe8A4jIwgiI3VhaObln5KxoeBXRsdBESkaHX+WR4bmB4plrEh5ZixAgSBW3BgMsKXCE/mR2FU5GsCvBR3q1fEyaXuSyt7qiTQdGCcssXK5jIcsHWm6UqISkDymKpmSqYipPVGJeIX24FhtHQ0LYwrnegXaU7U2DhX5uhTlsqZjoz1Z7e61YsWsomUFovFiCSBfZgncUK7pxCLmwiI8V7JJzEBTycaumyeG0wCqo2i1J8QYP0ngnBmfgSSAX/o7ZaXUWqpw6em/MRPQWLr10uJdxeOP7ZT0ZBJgr3uzfh/sOjW5ltL9A7vIXjTqcgJ4ErK9gSGoTSgOzQjmwhLpGkIFQNjEUtWYFgzvN7GIniaW9TxkwXVb38aDhrTxHDVwdyMT621kQqNauXKTV2pmK1XpylZowin2E1K9nBn+M4hsBTDTILoRVp1asJqWzl6EpExuBHh7obmrdRFa1hwdlQBGgK4NE1vHRMnEsaXiPADyWkbKRlF1X3Nrb/naKvjuE8v8a7s1ft31P4AfAJn/oROdC3C/3clkgKmf+xHymP/B4/RPPqe6YPvsdtJGIEBfcz58doL3EX76Pcf/3sfv3/V/5Pt7Sr5l6L4P/w9CKKJ/6FZLVQAAAABJRU5ErkJggg=="></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="https://ir.linkedin.com/in/%D8%AD%D8%B3%DB%8C%D9%86-%D9%82%D8%AF%DB%8C%D8%B1%DB%8C-89161a189?original_referer=https%3A%2F%2Frgb.irpsc.com%2F">
+
+                          <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="64" fill="url(#pattern0_631_6006)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6006" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6006" transform="matrix(0.00793651 0 0 0.0078125 -0.00793651 0)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6006" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAAKlBMVEVHcEw3mtA3mtA3mtA3mtD///83mtA0mdDw+Pxhr9rI4/J4u9+czehJo9RUvrxtAAAABXRSTlMA3I0wYaL3734AAAMYSURBVGje7ZpNT9swGMejsU+wTT2PC2f2DbbLvoElC7gUTbFg4pqIrT1aylh37XgRx1aIwnEbq8QRmJC4tnSi32WOX9I4cerETzdtUx5R1GD80/P8/feTFON5nre03PAdovlk1eOxtOw7hiS88p3jWTz/sQ+IlwzwGgJ4wxRoQADNVe+RD4rn3gsY4Km3AgNseg0YoAkH+MCoATXgfwWQEAYIJgdjEGAYRWdjdwA5pAihgTtgq8fmI/zVFUAOEY+PgWsGPQFYGzkC3lMBQDeOgHdcAfY6dwTci+kIfQicAGRfVlBFRQOAJbEOzcC1hG2EKIpX4pOjiC2VwbUjYEcaCX92tfKFAKw7b6bYihjha/d+MIwT6AAaSvuW4k43cAeQ9tH3UQBpaWEIbKp+4AMB//idiYQyAiVoOBO1QF0NsHUso8t3hrzgs/3pZDo13fb0fhDJ4B2pJS/YzgqObk+iaO/skpRsKLwjtZKt2R7ydk0RHoznllAEGKIkBrYMMO/LOuBB3S7i0bsyGVAFiBscPpZtRmA2RpU1GCaTqaHdldCgp5p9aqwwAyxESAOygcdVMhBdflYBztVg1ADrGVBVgPh+Xj4DrKVuFsHqA5xRgC2kNQOaAlD+FZ2eniQM/fnF7gMWe5fs+fGHzC5z35q/ClK7u/jybWLobxYf5FahIzbxhZLkppIT2Yy+GH1Qo32LBjSjgap5l5qMMD8DbsQ1/SkS648feR/ELy2DDWkccmV6ALLvxuSRLfwiCywECA2yHSn5/XiYVs6ArasqmdzbSuA+yLS0lOjkZykNcE6DvgbAVg1yHSnxzbbEV9KA6gCrBqZlLA/w91UT1HZj9QxocQZ0rpHMPvjTGvCOohtpoRnguUb6O3wg7q6OAGJoaTkfIKgP8O/WgJuVLkwDXLkfYFAJpIyR7LsR6gO6YB+ANahkJLUKwL1AQT6AamD8yDMDyB8UAyYHMvgHrR150VXju+lRYwlh7k2MDTLvSBjUf9WtATUgD2jA5i/grG0FBtiEH1iCj0zBh7bgY2P4wTX46Bx+eA/794FfYVel050Tw4EAAAAASUVORK5CYII="></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="https://www.pinterest.com/metarangiran/">
+                          <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="64" fill="url(#pattern0_631_6007)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6007" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6007" transform="matrix(0.00793651 0 0 0.0078125 -0.00793651 0)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6007" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAOVBMVEVHcEztIiHtJCP5srHtJSTtJST////tJSTtJSTtJSTvNDP/9PTyXl30dHP7zMzwSUj95OT2iYj3nJw2vynoAAAACnRSTlMA////wv//LeJzUwJCbAAABJ5JREFUeNrtm9l24yAMQBEEp2WH///YsdMsjlks2Y45c070MNOXVhchtGEY+5Pr7+VHniY/l98rm8v190Ttd4Y5wvUiO8jlSXD+8h9GuK+/k/6R4NrP/rNd+JUd5bfnBtw3oasBJhNc+gJc2E9fgB8mO8sX4AvwBfhvATi8CT8RYFItpfLeGGNHGf/zXkm5EYNRlY+qTRTOBa31cJPxh+CciHbEoENQAACUt8KFoSJ6pPCKyMDwi5c+1pW/IJJR0x4dDMBBGbGq/cEQvYRDAUb11ukBLyGhETAAk/qBKGiEdQAujRg2SEgK445sffkxDNvEWYQR1gDAi2GzaOFhJwA3btgjzvBdAGDDsE+ClXwHgNXDXtGxTcCa69+vf5WgAQCmYf8x/4gUp2wY05gedJtgG4ByjWBrbqnvUQyMSSrVQ6W2sAkg1YOcAnhPOFOaNqlGHAxsADDlFblYSbgceDVjOAVUAF7egBBbuZZXs0YiWwBicSWew0rFVI7curoJjGAAndR6bOfl4CkUp1nAlpxZYootKKePmgkY2gBI/bfSMeFNwMpbmR8BbXmxIyidCFAC7QVlC0C+hGdAHctyG2NMafxn7AqmlqBAkFswUSyQ//7Tgjzq95Aci3/YhzwWcDQA+OUOhFdlsbSuKHtCRO4Bw52B2TKXAA6bSSIegC9dIMwCANICkC1CEJzQVeG5QgLkJghFJ2BFHwxVD8jhBDabhmKFyjAu/KYDawG+jCVlL2TFUkg33AdrAchOokVbwLTQsRbIgxEaYOnA2m8BkFwcBRC2AWReeLoFjgMw2ywgNp8C20LHA7iWIUnHMM1+E9AAWThDR8IsGb5l0oQ9hstlEHLBkv1t97AAWUJO+GyoGtEOkABZUUOpB/J0/PplLEBWUwRKRWTrNS0SIM8EiVKW5xVdrLZMopwIxJ6quFCUPsMxCoDnrbWQhKoYMi2vMQcGYOxMNLY5ZKgdnHVF6wDF3kxQu2NRG3Vxm1XF8+aIA/eF/jh4Ynf8FsbCfNiXnRCdjHr2a9OcpNSeW06ekIjZsBGaR3QaWKU4Xd3YKMojEiHJAC8vWIxbCwB/FEN9UtaY0DRmRLE8lABDn9f6LVOyvw7EmaXx6AChObFuzgmdzW3HjT5w/e1RrSrdOAARYG1iz5rzJkyd0R4Ur861yDenJICwPlf6JIBOfv3W6HMAWhjMvRkZAHkKAk79JgvkMTDTTrg7pQPk5dp0m/64spjygvWE2+MjAP7u9O8fE1Dv8OkAsVRr3NLxPSnT/h4dIKv23GrwOvYUiAE3KPwQQGmKewLAy7B5w3EGAFfPc1UoiBJ8HsDeIgsvz+Ht5wGmoxem4lcW7kK0OQfg9pWOKNxHBcVPAqiVPPLzTgipAbDPBZDHsPEZR1CdARKXXQGCh64AOu40wF4AoU4BqB5Dt3cDsAC1jxn268cmI/cp/UgfAO+2fU1wWEECy8GPxtb9R1VE0xcq6V58T6X3QeopJRl/FN9T6c2By7MBbhPAh8jD5Ptt+RfgC/AF6P/Uq/tjt+7P/bo/eOz+5LP/o9fuz377P3zu//S7/+P3ns///wFV71mgS6T4/gAAAABJRU5ErkJggg=="></image>
+                              </defs>
+                          </svg>
+                      </a>
+                      <a href="https://virgool.io/@metarang.iran">
+
+                          <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="63" fill="url(#pattern0_631_6012)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6012" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6012" transform="scale(0.0078125)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6012" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAARVBMVEVHcEwvLDYwLDT///8vLDQwLDQwLDQwLDQwLDQwLDQOcrgHXqgMbLMKZa4WXJcrOEwXT4AfQ2bG0t6Qq8bl6vBmfplTirlv/mdAAAAACnRSTlMAMv//rJsy5GdAp7uP2AAABRhJREFUeNrtm+d25SoMRhk7yUkoAuPy/o86BjfAnFi4wJq7rlL+avuTRBFAyGQ/n68qo70+f4hrXx9Z3VuEj6/N/3d29xbhe/VfFbLvwv5nDb5eVTkCkwcfVUH7GOvvVRLg9UM+q6L2SV5lAV6kKmz/BQBZGKDXfVEA2dV1KwsCtPVo3XmEqwB9V1vTvSwDoOvFTqbCRYC+3qzr8wPIzgWQ+QFax3+dOQRSNk3vCqBlRgDZKGCCa0+AJlcIZDM6F1wwLwAtMFAyA4BU46cLY9TLwJ4ZU83DAFIJzoUl4KEAk6WqQE66F2Jw/evFfzJCCkADfPRvfs2Pn4EOAAP5CIBU3NosQPtOAGPNAwASFvf23y4DxfjjhOF2AMn4YlaCeAaeIEACNMJxP/7zMrAD+/3iFAEOQArKOV0ZdhkYek8gILj4b86tBmEGiogESAKC9L8SGIgwA0VMAQbNXQDKeN8YBPUE6AbO4hKgxgMEQMOpp4CfgSNB104Mp9KAoAOwIlBd70y3nEXi0NwB0FBjTg20dcz0wCJpIK8DSDa7Xxi8DPSGI+5JALggEJwAjgJt/c4iIhxLQI4zYPY/MwxdjSUAjAQEI4ApAz5noq5/sW5IloAcjgF0RTC/Q/2raR5q0FwDGCcBusUgXoJ+JqaOBQSVghPDiNAe+I8EQV4CUK4A9H0JOkFIjMEBADgCUH4sQEQCdQVgTYEpDREC7LPgGgD3cgAhgB8DOE4CgsxBmwIaA9BB0khA0EUwGiYCdT0kTYkEVQRTBIa6KAClSIC0LCTYKhwlOAMANwL8MwoMTwHQAVcF/WMKFC5DmjAQiYcAcEMx3KhAMBIOuCIINgg3DsWYGMztMnHPXODNhrhCnPfKN03HQR0iJDB7ZT8C1wAUTZSghXCjfG1NGCQBFe1xAHwF4KZl+WJMIwLgSnBxXxDGgHLQv/k3AfAUuLwzCupgtPcEevQvZoKF4rBDcLg7BrrToH2Xf2B7qG4Eru+ObYMmIGCDjn4+E44A01h03CI57pD4EhgcLqDVO/fT53sImCYRokcUSGAW6IJB3+p5du50O7pnq/fZvTgeA5BdsrAQpl0SA+j7vh3/YPW+aYAWANUnhL172ywQ09bHnJ6IpYs/eZ9K8a4+4dSnCgi8zinf3Lt1gDq3wPWKOd3ngePe+vcgjAD39YqDWuROyyqmwPT9Anlwgz0viGjgIYgwCgx5cIQ9MQk1cI8PYhKIew8s7JlJOBwFEngaHM7CZ07N4E0W7ssAWwGJ54ZS+QLQIAlcCPy5XdLJ6RYGfygQSwwWw5/aJZ4dS8W9KqDBWDAzMPkUgDm+pWH7fF+IKUfo6fcHGuBLGngSbEFQ1aMAJhCwNK8DCSwCyKcB7BUOQcMsmBFY2h2G05dYVDQLUgNwHsBsGII5cUoCkHkAYPEfxICl3mMhZwOwnCD4A7J4+hKLf5i6mw64qrIAbGu0YDQEmQdARdYk/FQAzgE03oy0KSBUlQVAivi6jEOVBUBCZItgjGW6zKYC/6sETZUFYL9Cn01VWQCCXdJGAJlu1ar9NtEyiHMBOLEiEnEFzvo/caEx7NnYNIQqG8AYBb7bJjKZEyCyRTkdgLOz4SaCTUNV5QbYVucGAar8ANsWhVMhSwBsIlxJgEsAiwiqKgUwijCOyyALApiLxhf9X35hcdV/9f9Lq/KP3Yo/9yv+4LH4k8+yj17/lH32W/rhsfP0uvDT70KP3/947++LPf//C5dbAm73QAx2AAAAAElFTkSuQmCC"></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="#">
+
+                          <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="63" fill="url(#pattern0_631_6011)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6011" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6011" transform="scale(0.0078125)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6011" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAAJFBMVEVHcEwFDKEFDKEFDKEFDKEArewFDKEAleEEH6oBddICVMMDNrWMKgCqAAAABXRSTlMATfHgpJDWC6sAAAMUSURBVGje7ZrLjtMwFIYzEg9QwROMhNgjoa4RSLyBFbWsoMhyk3WGXvYpM133glinaV+gnbQvR9K0udjnJLYPEgL17KaWv9q/z2+7x+M4jnP3kVvFu45zjrsP3DJe54RX3Drengfwxh7AsyG8JPTnX9IBdCmAQcd5wUnxnjYDzu+dTzTAN6dLAwwcTowb4Ab4lwE/TiEFIHbf2XhvD/BXLI3P1oCnRdafuaEdQCQBy2NvBRAxu8bGBpBPP4+lBeAyfWvAMWAUgEhYLUw1qMhnBZivpP6Gy/gUyP1dI0Ci9DfKRLFjarj6XvBjoD/raQNU+cwAqnx59DUBj0h/zf1Azj5TgIjR/mykAZDld6t/PLQDZPnd7UE1YwNAkX/NPdVLOOAo95+kS2IAULK/l+Z+pJoRAajZn5mvOgMWNgGA5VunH8eAGUGAr2Z/KgD3AsAKEKC295YC1AbQBADc42aSe6CXVACw+bBfWUOkBQDdMzkPDPaSBADdk2+fEeylOgDevLZZ05BpAHxw85qehyavzBIAAMt3XcGaCzAAvPmdV1AdQOGlEoBsfmsODqDwUgFANt9Jvjhqo3zNEwuGC8Bn6MFWAIYMF4D7AXqwFYBZgwD8gJ9LBeCACwANoLRC0xSuN4AD0wBAIm7zJi9oOJfKZVTTeHppiZvOpUoiiV39m/qXhfKYJiA9iaqIqwAiAgFL8AeHmP8MimPsmuHMAJDGaRXU+iMZWnpJ3ROPK+aOn3nzAEovQdv66blIdIHcT0ortNxQZowIQBSoWKEZ4DEiYIgB+pqAWdsV7e8BRlQRHzQBWCJXrNCSB1gmb3QB2F1XG8D9RYuXWq/74IlVsUL7D46ECoBk6BnVUAAZzACADIYAVYa+aRkoxr2kB5BlmBoXoqTzcWReyUowM2rXD2LEjNqAmgwbm2JcVYa9VTUvAa1gUsWJoDwyqSMVl62pbUHyEVgEs1LYQZXAsBgXKzMwBGTVxHFIKsrOT+GtMH0D/J+ALq3/gP5cSH6wJD+Zkh9tyc/GpIfrrx3i0/n9n3m8p/37wG/ns1SkZ1D0hwAAAABJRU5ErkJggg=="></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="https://rubika.ir/metaverse_iran">
+
+                          <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="63" fill="url(#pattern0_631_6010)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6010" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6010" transform="scale(0.0078125)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6010" width="128" height="128" xlink:href="data:image/png;base64,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"></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="https://www.youtube.com/@Irpsc">
+
+                          <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="63" fill="url(#pattern0_631_6009)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6009" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6009" transform="scale(0.0078125)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6009" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAALVBMVEVHcEztJSTtJSTtJSTtJST+///tJSTtIyLvPTz84+P4ra36y8r2lJP0eXnyW1qY0Hh4AAAABXRSTlMA4i1zwv/w0xgAAAKbSURBVGje7dpPaxNBFADwof0GCjm34AeoUPwACv0Ge0hihdAyb6lNjjN7UI9NKtrbQqLiLUK3vW4hLXizf0I8iorWWxEb2s/gJMbadt/svskjSGHfKWmSX2YnMztv5lUIIabmC3KMqDyYEcOYuivHjNt/hDty7Lg/+Px0YXygMmeAWcmIW6YHFjjA8oyYlqyY413B4Bru8YAlscADlkWBB1SEZEYO5EAO5MANAEBfCUUF4OLtvt/4F/6Vl1IA7TfOz773utGeiU5rFIMnu9F27+OP88aaTgP0y62Wlxqt3S/aDsCL0MuM4qGyAfAs9ghR/mkF+h4p3isLEMQ0oFy3AKseMfYtwDoVaCoUgE9UYBEHZEwFyoACQUgFinUMgKceOT6jLXhCBw5QYIUOvEMv4TEd2FEYsE4HmhMB9C868BZtwcn1t72yDoxHGCATQPN56AIkp0JTnWZPhkstQADVdwDgA9LX6hsKPCQDMvjKBCA4IgNtdLiAv5kESmgnti3jrdZOApLeAvNCLSYB1hZIqMY8wCyZIQ+Q+tqi6Q5UeUCiG107MfFDugFQ22T9jNhgdgHQyeAwEgGdjnQA8BsCOhslOp37vBuK7aaIAhoBTkMHALkrW9PGRRrwJvScgBP60kZcmRwBYC+u/z0/kNwUh51k0XNtW5rHTjQvUt2UlLeYkuq6JNtyMul+1kAIszYc9Gz7YFKbLs3d9kHQpny+VLfvnauEiyjbt76mDRvdTurOqZW++Zaglb9xdtzrRdHwAOD1cPffGTyMzPb/2Gz/QWeeYPw9Zbh0ArE2+jtykoEBarSsQ+IARDkewhhKmS8GlR9E5UAO5MDNANilMnaxjl0uZBcs2SVTdtGWXTbmF67ZpXN+8Z737wO/AYerU28m8em1AAAAAElFTkSuQmCC"></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="#">
+
+                          <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="63" fill="url(#pattern0_631_6008)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6008" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6008" transform="scale(0.0078125)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6008" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAANlBMVEVHcEwSn1Pp9u8qqWQAmEYAmEb///8AmEYAmEYAmEa6481AsnT2+/lyxplbvYjU7uCg2bqEzab4ZHuMAAAACnRSTlMA////n///3V0kwIRctQAABZ9JREFUeNrtW1ly4yAQZbEdh537XzaSDBJIDaKRY35MzVRSM3H60fsGIa/z+7z93D92fm7PX5Ke309SjxgSCM+Pk18gPMfS3xCMoh8R/A6jPyGY9eB2H3huYxmwsOB5H3qeYyUwsYD8jAZwH3y+AL4AvgD6AVAujdF+OtoYyeknAVBuvLBMPeJRilnnJf8IACq1SGgnRzGh+X8D4BP1SG/580iwTN8yYeg/ApCOQTfPUVjP/wlAQn6lmd8/HAyEdgDcQ7fPIGzfW03fDIAam9990nvhZgucbFEnNhG/CPlWANxles+EN7nlL5aZsYi1MaENQHL9+XIadjt0MhG1cUEJ/iYANJU+c5LWnERqJ1a+BQB12/WZ4+fSYisTmHkDACo2JW/TLClWhVH6MgAu1uu325a28TOnCEj7/QXCwXHRygPSJP/Z+D3Kx1Mf44QyFwBE/ZutGhs0dTQHJvsB6GjWDep8dB7RGizvBSDXS3TQDwgW7aF9ALi9RH9CEAOD7wPgov7pe+fR6lQNyDn+h+9PXF3wiWUhlAFQ2yDBZjeq8QA8IqKc63HREkhVAwEFkFMpoBE88cEWPRaABwXwCnUPhxcC4zgAnEH6u/42ibdFjwOgA+ccyBYMC+6iqgWkbgL5VVfPiGKBDHmswQCIfHNHzwRxpkkLYHMmFSc4kZIHvVB1narcBv4IqUaBHLROs26Ee47y1O0ATMgmdEECCucfg+6KdgAO4vNLljFAKJwaqpIMSI1n+S3X4IAOUeGTYHJGal7IH36N2mRg8TLwrQBMoCJBj9Lhi8IvFK0APGxqLi1/LaYLEVgKMY1UdHCv6CapwHFZUlACSAtJxXU54B6qteQCmScbAYRUwBc4g1SATaiQGZCKEWjYp6qONFG/PqZxAEy5UMTmiabojEkljzOQi1boUJAA8AgACgzgricheAFQSADwLeUakXFCwHGAlwH0GsL7AMS4Ui/4LlpB0Q/keSEGgS+pdRlAkcl6tYRD04TSE0/YCOBezSKp20KSo3k7szgvEChXHBlWiPhJ3yprXC2JJAMb5SGVaA1GMfssZV3cbjyw5lA1OXk5HNdLien/k9axCvS2fhYAwZSVqpoTFk1dpukhc/OUxqfjG7ZTT4dMydZyjtYQJA18YXw+LshpoZPSWJpWUm8u9tOSfGzi9yKd/rk9LS+kxfmPuP3EJptd6WuFCT2VQTpFUFnBsvzNuN1Rmq2GWG0QSgENro7pp3mgi9PF1M+rcKotMD5UOye6sLNQFZQ7JK6tAuTe5jxQx3QlZvOoBsUa9E6jfhxUZQIw7fpE6vGrJfWi0ttsjJp3FvWjq0m1sqAp9ZowxKGhsrkXjP1Gi2zTLcbbMPDYMHDjnfN+NzxfQwS6Ubm2aTBlOC32y/Gt2lV4tmcvIhek6mpWRzV0F+jz8477abtemX76a+7UNbAInTJLL9I/qWXJ/0mgrZQlJ+JT3eOKLWPoG9sZvBEWsrbOwaWrVEcN7NfscW10G3KiVAK0fV0r2fjoHV6bnfrM6xmscTElTRN6x/dx4Oc36o+2BYo7NUmi1L3AECQw6w9NtrfOVkgW8kmC3r/CoaMEMuphhcfwSmaQ/uiFJZaYxaTUt9KHCX3gA+VbThB+7MIaTzqcAfLeOf20wmsjJZ+OlEa7w4of8xcWmXRhW0ztd8fYctQxN764yiWyyUC8EliIwefiMlv0QpnqaSmdAvYHs5ur96zz6f193Gt7jO4WGhWkIsrqqwuN2XRKWZea3VoGKFgrXs2CiwCSCa3wR3ubzQ2uy2dOYcMWKUsAsvYkBbeb9qtlu1HLntBNYAnsGA+jmO1/OWZyB29cbJbsnPr7DgCAS3r/3Plu138BfAGMBzD8qdfgx2638c/9hj94HP7kc/yj1+HPfsc/fB7/9Hv84/eRz///ABS5W7CT2kjVAAAAAElFTkSuQmCC"></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="https://faq.irpsc.com/">
+
+                          <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="63" fill="url(#pattern0_631_6017)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6017" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6017" transform="scale(0.0078125)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6017" width="128" height="128" xlink:href="data:image/png;base64,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"></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="#">
+
+                          <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="63" fill="url(#pattern0_631_6016)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6016" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6016" transform="scale(0.0078125)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6016" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAAMFBMVEVHcExV4ytV3jRV6SJV6SJV6SJV6SJV6SJYZfNV6SJYct5WzU9XgsVXka5WuW5WpY3qqCoNAAAACHRSTlMA/fg5Z6wKmwwfgcMAAAO+SURBVGje7ZpPbxJBFMAn0S9A1cOm0qSJiVlrmnrxrH4DL34B4xfw5jeYbKFkuJjNWnrdUJDU27YVUk8EC009IRIbeyqtSrxBbRt3kYWZt2+XWeZiDO8Ew85vZ968P/NmIISQ5y/NqeTuQzKQa0/NKeXWygDwxJxa7nj9r2vTA9gjF/DYVJCbrgZ0FUB2hbwwleQZeaAGuEFeqQFeE10NkCWmoswAM8AM8M8DmPhViwmY77Yd/rtVv9qKAbC6NUoP+ZZ1Sgs4AgGwSou6ssm3bXsthd+aDGD+wvaepmn+6eagyTjYmgxYHrzee9qZ2yn/dOVsZ9Gyh43F40mAiv8opfX9/N8P+UJ71GjAaQBActw/RIzDSECPTpRMFMCyJwMMJwKQpBKyFwE4kQGshQOsqgxAnIMA2KBS0g8FbMsBVkMBTTmAYOQ8IGfLAWgnBJCU7C8sJIm7iHAhOQBrygJSGgqwqLR0UMC6POAQBWzLA1ZRQE8ekMYAWVsewLnDGJCjdBotEmkzsnFTIpN0aMC+VEwaJI4ObSQwjgCsyr8TGXWILZI48ZQTJwDYiNV/HJVGgDfC7/n9mtih0LZxjyboIqSPE3Pf+YbGYmK5iS4DwYKB8c3TKrcsGa+uWbCxkECwVXwLtdIPDDINAawaNNQeiKI5bB0Jsop+1L0PJ9xE3IkgrrQGV7aPKLoDALwZfACjGr3tNmIIBIlnn30FVcF8N5CHSATcn3Mas9Y9ALiHRQsIyCGWRBD99GUAqwBwggD8TIPqYA0Aesj0/DBr6IimMxGATTjiDqIoCGgiv63DRNRDnAED+IZzCuYrZA5fMQTxJfoJbLmGxCSVBaQHWtsdN3wMpv+ULgCy4gav4eIXqmKEYbtivgAAEJOPzroCMnVVvrTjACTy6wwAAUx5BFXVEcQGpFCAIdPVRn2Bt/N2WNd6uDPx7lxK/EBVanxNnIfHAy6oljSzUgv2d0tvdgoTMJcbm4IvzgPXGdTdjNsypGFuFLJ/QzdZ+YJryB+caWaW62/8Cm7z3nPvO3D5bKnbruVdKdSv3rkasy64B74g+0R+gMP8yuZ2XFnUxGQ/DDjB3Xr2PKQ0DGSVko7XTFYLmplwfjsy1qITWvq20PIYZL+iE1H+twIlTaAqLEaV/6Z1jhwRCBuWkhN9hpL1zDiDnzm5mc1o6JNOcVilis/Am0MqeJKEHEQtXTo4wDo6ljsKY2EHb9rsRHMGmAH+a4DyZZ3ydaHyhaXylanypa3ytbH6xbXy1bn65b3a3wf+AGZYYe3qdIxxAAAAAElFTkSuQmCC"></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="https://www.dalfak.com/metarang">
+
+                          <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="63" fill="url(#pattern0_631_6015)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6015" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6015" transform="scale(0.0078125)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6015" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAM1BMVEVHcExf0+RkAZpfwN1f0uRf0+Rf0eNf0+RgqtVf0+RjIaVjPK9hlM5hhMhiXLlkEZ9gq9a2ZpZBAAAACnRSTlMA////O2cK6LKkBDnOcQAAAshJREFUeNrt2+uS6iAMAGABtVMCgfd/2m27WqvbQFuT5swc4k+d8hnSixIulynu174zJ0bXX++XRZw8/BT99TX+7fzhxyzc5vGNTjwFOt9/iklw1RvfdEMd3HujGP1dNQFTClQTMKTg0ukCuotRjgZogHdAiDGUXkPk7OQAzttapJQ8IAY2xl7ADAEMThMwhucwfAMY8uCjUwWMadhDyAiAzICRsHX8MB4f2AFDQeZN48dkZQAbk4DT+DIAa7FWCQ4fnxQC2Mo0ZLDCgLIgvI4sBrCeFsTFgeUAtOBRfuIAQjCXnzzAwsq54MCeB7BYKP/jAA/zy6dUFkS6/I8DonFz5ByxlKeUV66+3wLC56wGSJvKwOHK5xgAY2ZhwyR8lD8rYP3LvZ+LeR3JBFid3rczIRClwgYgBb91SPr4ACYWUkDOECfAIJUCh4WrJSOAunIi2HMA5CTYswAOlAFHUsALOHD/5AUY1AYEbcD+OWAGGNAGRG1A0AbkpAzYXYXcgN1VyA7ABtAGxAZogAZogAb47wHtbqj9ROTUAdoPpeqP5eq/jFAboP3jdHcJcAP2/0nEDABlwP4ZYAbs/4+K+Y9Krww4kABWQCAqAPw5AOpG6F3wZwDIRYFIrhfxAqjxvZvaVaQB9KJILL/PBKBzPK9cEstWLAB61XD56ehlAC6XVo+xtr56ZPE6zxEioi9d/72rTdQBQHqFrdx8UqiWqmwDQyz3j4gDsNJBIw0AV+khEgaAq3VRyQLAVfvIRAGldrblhUsKUGmne12XZQCp2lA4l6IIYEtL5bMUJVo6t/W1Ph4R2AEJt3WUPkuRGZAg7GgizmNzOifAb/72ZHwBSBC/Hv4wIAFyjP4HAMmXX94DIEa+7v6PDQ5uQxjeaHtMGkAfoL7ZTX27n/qGR/Utn+qbXjW3/apvPL79K1u/VTa/d8vN75rb/38Ar8F2qVBsQ8AAAAAASUVORK5CYII="></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="https://www.aparat.com/Qzparadise.ir">
+
+                          <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="63" fill="url(#pattern0_631_6014)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6014" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6014" transform="scale(0.0078125)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6014" width="128" height="128" xlink:href="data:image/png;base64,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"></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="#">
+
+                          <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="63" fill="url(#pattern0_631_6013)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6013" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6013" transform="scale(0.0078125)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6013" width="128" height="128" xlink:href="data:image/png;base64,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"></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="https://www.namasha.com/qzparadise">
+
+                          <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="64" fill="url(#pattern0_631_6022)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6022" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6022" transform="matrix(0.00793651 0 0 0.0078125 -0.00793651 0)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6022" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAAMFBMVEVHcEwJAQcJAQcJAQcLAggJAQfhByMJAQcGAQbPCiEfBg1+DR1XDBg7CROdDB22DCGp6jryAAAABnRSTlMA5DlnrJsWJrUpAAAEaklEQVRo3rWazW4TMRDHV8AT8CGu5Q3g2hM8AifewFIUSIQQWmubwNFRaK8rpYVy4JC0EPXW0PLRGxBo4EZLaMutlWgRt0iEVrCbxF7bO/Z6bRj1UCnZX/+eHY9nxvU8zzt13beyC1PeyE5d8y3t/Jhwxbe2c/Hzp5v2gPrlCDCN7QH4TuSBi76D3Z7yzvhOdtW75AY4691wA9z1LroBbnu+o5kDMHED4HafOAGqvx5vOwG6CB24AGZDhOaJAyASgIb5ALgmCUCdfEsI+pKAUjMfoNtYJ4KA7/le41yIii1BQCtfID2InqESNAL0ACpBI0C7BCpBJ0ANwF0mQSdA8xYqVIJWgC4SqQStAB1gIkEvQBvKIwnNsYDcAEyWd9aiR9FhLKDYWxa2RjaAtD/+iZ+kVnh82MfmoYzrX38h2cpHTePtHHwKEWC/t4gZoL6BYFvYMgKQT0hlCy0TwNNQCUAnBoDqIPF9ClB4SzIBXaSzYisLUBEXEMY/vBI5qFOAVaQ3eVvJgIrwxyGTJHimHmDLkLK7ByQylU0+62gAeEX9Bpk9JBoFggsLDWqCrnJLCcCz3DcXX/Z2+8uxtXd3P/zkCB21ghV+6/m1GpnkJlILPibsR0QJeMO+dMwnMRJnqL0kFJQK6gPqwFK6nAmSN/xOBWBRVOgAqaPCdtmBCsBcsAAmum+QE3gA/gL6Odno1I9FlYJVOFpTPi43YUB9AL0nzu5RF23DALYROqpik37hOQyogLEKrfEABsxIPkqfZtTLQxhwX3JB0JP7sZW0kzzg4yF974UfOF04xXYTBixJK1xFhXUi7lYtgMURDfX9yJ/vCZSwisYAVBJOEhopRV8HYGGyP8or/JEcDFIbmvfB54kCASAcqBkK3kAK4txiqEAFQCeYVS52gMIrLC0hJ4CFg62CJBysAag0qY6sAZPzzOwtIAhQdlUwSYP79ksYO9EaUH7rtgQaCBYKCmIoWipIMpsdINmOdruRTwhG+UAKJD4l2WQkISkGRjlRSKpiWq6HWh8AAOlgYGkdBixJh3N0sEhHEz1YimZH2xd0LD6PM462e9LRWd1sKSoMxeGaebwzL82T/1NgVLNKnAD4Ag+gYYJOFEXWDFCq5inzcBdYY55Cc26QVWialrq3FKUuCzS42K5mF9uxF8eOXmz5mpZWWe5zLdOxPDXhG46msmfiWp6jZo23+tcQbts8cLeNVtEbt1yjtmtnI0yaxwNN27cPdn1i36dp+4Q12DWeo8Yx1AN0rW+SmdUduNT/e6r9orQhcRtAlLczJhgz6tlDCG319BBmTVyzOEFJDxZTADw7gAYgoVgoaAdRe8rZRbRFDAZRmI3CQstRmB+sKd7AIjDOA8eB1Q3j5xUDSX5ewd4IOE5UjkSfvW4Ijzd+91q5pvs4aG++YLa52fdxzrFwLZ7BEIJ9jGvR7xZz5ZihvaLKe9OlAjhf1jlfFzpfWDpfmTpf2nrTDs/jJ44X1/7lf3F17n557/bvA38BzZvXDmVtc3MAAAAASUVORK5CYII="></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="https://www.mp4.ir/meta.rang">
+                          <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="64" fill="url(#pattern0_631_6021)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6021" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6021" transform="matrix(0.00793651 0 0 0.0078125 -0.00793651 0)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6021" width="128" height="128" xlink:href="data:image/png;base64,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"></image>
+                              </defs>
+                          </svg>
+                      </a>
+                      <a href="https://medium.com/@metarang.iran">
+
+                          <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="64" fill="url(#pattern0_631_6020)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6020" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6020" transform="matrix(0.00793651 0 0 0.0078125 -0.00793651 0)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6020" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAAJFBMVEVHcExuMz5uMz5uMz5uMz5uMz5uMz4ODg5uMz4nFhlZKjNCISf7h7xmAAAAB3RSTlMATOQBCqybIO4aygAAAjxJREFUaN7t2jtOwzAYAGAjLlAVBtYOoI5wBCS4AOIETNzAcjLRARLnAE7SA9QVB0jaXo4mTtr4mcdfMfnfXNdf/Kpjy0UIoeePaFI83KI6rt6iiXE/q8pfz6PJsXisGhAB4uYI3EGAr2MPLCHAaoZeI1C8ozkMWKBPGPCNljBghSJgeMADHvCABzzgBughy7L1fipAdwzXsebqV38PvB+gBW6DKJXYYZzxPoAyfA5SdrO21UdhH1BgKbhGp01ruBnYyuW7D2yyiEixwAgkTAFwfsprs+pmJS2kAIVaHpO2qnH7SdCkuAFIsB5tFTYnskmVBqAwAO2Tzo0rxTdTHaCm8k0VOpVLBZfrwNYIELkLxMiwpi9kgBkB0diNJNLuCCNXF57aUEi9Qs8TogPEFoCoM7ysn6UDhQWoxkHq37R+lgZQZgNSpXmBqCxXAFsX1P0dDwBiKxAqIxyKpApsrABRMolIlgpg7cPqWXKmGWB2oFQAbgKovfxxGJgBSIcDgQKUJiAZAxSjAdwPxA4gpBcGUg9MGcb/mAeuqZwPmcrjf0yX/jmPWFAsK5J9ScPDljTnovojp4HLugUAv1jArzbL9qD55pCXK/j1Dt5gwLc44zZZBsA4GcmIbR58o+na6iZDtrqG2ZhrWc7NtjYQZOR2X20EGX3ggB95eg5dhPcf+yLHsW8/4NgHP3j607sHPOABD3gABixh5Vfw60LwhSX4yhR8aQu+NkZPEKC6uH6BXp2jJ8DlfQ3A/j7wB0E2dvOq2jTAAAAAAElFTkSuQmCC"></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="https://jabeh.com/c/1nk44b">
+
+                          <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="64" fill="url(#pattern0_631_6019)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6019" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6019" transform="matrix(0.00793651 0 0 0.0078125 -0.00793651 0)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6019" width="128" height="128" xlink:href="data:image/png;base64,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"></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                      <a href="#">
+
+                          <svg width="63" height="64" viewBox="0 0 63 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="63" height="64" fill="url(#pattern0_631_6018)"></rect>
+                              <defs>
+                                  <pattern id="pattern0_631_6018" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                      <use xlink:href="#image0_631_6018" transform="matrix(0.00793651 0 0 0.0078125 -0.00793651 0)"></use>
+                                  </pattern>
+                                  <image id="image0_631_6018" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAflBMVEVHcEyZu7sBAQH///+ZvLybvLx+f3+Zu7uavLyZu7v+zQObvr4VFA1aXF3T1NZudHRKT0+BgoJ4eXk+QkLRlwBpbW1whYUzNjZgZGUoKioeHx9FOAGUlZWRsLDmuQL09fVtWQF6k5O+lAGriAGQdQLl5ebRqQKIpKSsrK3AwcEEygHzAAAACnRSTlMA////Zwr/5TqkVO3ShAAACbVJREFUeNrtW2t7ojoQFtzSbQlNAhtCUMS7+P//4JnJhYuCgu2pX5zn2WrbrfNmru8MMJtpefv78e79orx//H2bteSX1Wv5+Nvo//Puhb8OwHv/Y9W//fGeJBbB0/RbG/x9956HAOLg7cN7ony8PdUAXggmeKoBvPBj9v5UAN77zHuyvAC8ALwAvAC8APwsgNDJLwHo6gu9YpNmEQjdFKNJ5uxh3V5x2qRpStN0cwJ9YZEyRXwjJGdpEf5/AEB5miWKNPpklCnzluT2x5KOgvAAADxr7jshfvNWJQw9ELFE20Ju/g8AYUGVObWSCTOi4SiWURqDUCogEhL4IYnuG2EygFSas8JBdcDBFwBEZBYEAQ8C8zWOAYMEK8hT+KMAwhODT82TyKjOsgwU5aBeWOWNAAS0jNqEPwgg3OBh9eGFQHOjJpYn1+oNhAisld9BMAlAStDVoB1VO5007miPqRCIDt+LLLmLYAoAAfqTKDMfPiAiXlbnc1VxShENIlA342ACgAzMz+D0N9TToPqycl4iUI1AFj8CQKD+m+oDuvxqyZlTRABxEP0AgJAS0E+Dm/qrr64sBSKALEnDbwPYoP6bxw/EpX5AgDaAzL3hhNnI/Fd39aP9DyXI4dBFQCEMRPg9AAV8Bgtui/gq51bKBkIQayfkp+8BgARI7uiny3lLaghna4Is/A4ACAB12/4BF1/zjhxaTsgImCB8HEAhfSL4PQsc5r0ItAkgFdk3LAAOUOKO/jiwEVBeIgATxAxqyEBFno3oQOCAREV3ACy72hsEldA+GDLBCAswdICQYgSAJgj1F2MC9IEaNMEAgKKmMmiAhAemuYwG0DYBh0xEFsMmWCBMG0qZ+IQGQXDZ8jnnQwAaR9RBkPhDJhgAsMG4OwH3tga4LjssYeJmDJTOBBgECKDfBAMATsgz8+jkhcwa4EK/VEC/k6Y4xLzHBSYKEABDAKYcFqdRQZj4SYL0K+s3gM58RmTr204alq0oqAFARwiLLO92piEA1GeHimnSP1SDOBcq44OFqAeALJBTi1EWAB9UYMEAasCN+hvTVi/qCULtAyzGiRldgKkTOioNwzDzJZzpkPvsXhE2WGh1qdsBgDTUALQ5VTq2EBXKjw7zCopQMEp6C4EGgKQECpFEh7KrnjQIIAQOnpXcz22Q30dw6KkEpQkBCrSMwQRFrnvijVIcQRdnJgdiyejddnieX7eD0ngA2xmMi76fTgAQFjp0I60YwA/MP8M+KDUANABHQgVDM3zaFAuESMR8nWhcT6QyizkfyQhKl4Y4RMXgAZwmoaZM64Yn6WIwgoEYaxkMBhqD7gR6ONTfUtEmZS0vHDAH4a99iQByXxWTAITC1WFKSGXqEozGMJZmDGoxiJLwLZxQMzb6dZUEWr8zAEThNTm9DSCrG4H0xbw884To3USzINGuSUyoxLy86EdaPwffM71LkD1pcA9ALiznBBOYoIpzuwxaoLgNTR53mLGG8cWp+VP4rcCZHoBupgJQZ7MFABMobeEz5gZZ7Hfbfyjb3dqASEw5bAxQVmaMRjIScYoW6MvD2wCoT87mHOhI+TUvOWhb7I+r1fFfLbs1sQjABjYVDufAOg/HY3hBH7DJAFIEXy1xB8GhMcszjsj71aeWFojd2iGI6fKMs3nstghIiBGKMADoNABAjLKY0oxlsY4lPP7xs5Hjdmsh7IkbnmJBqZviueZiupbRRyzgnYj561h/In7Yuq1+nZPF2kLYLQBB3CGPPNDbSzNUxo/EgFfkLT6EJujoNxmwaCGQrY7BgbfVsYF7gkcAeNJvWFdM/MWq0b9a2AxcWy9scTXJKFZJKI800ttS4oZqAJDJHmZ8GwBQ0jxuGWDXMsDWFaLFyoUisftaxmRuzJM3nE1vNMm0Sqjz0FFCyMNFS//nrq6EK4dg7XeFsBaPyB7oBXoqsIsRDhm4R8vvdsdLAJ8WwXbRVp93OUT2QDeEjqx8tjS1EBoiaMZ0IzoVV64KY2BemYDI6GKBmU3mA3YyzZdLEQkMATjq2rkdlO6tKo2mVZS1dnrJXgDAREbU1EKoRBkFVrNwmWec8amDzhSmVaNcJVi1rglTNJkTuvkAZ2MeaAD7OvJNJu52WxORa3vlBNlBP2uiGAI967q7+wGXiACArC4A1Bm5QLOzQeUGQG8I3AVg+pEpA+S46wBY2bK0Resrepuz6t39ZjoAHFD0cMaBWu/qyMeKtF+YdPjUyScdcRjgzBl4QBUPrGiAF9qGlEPC7UideTuXDiYyiR6BhgFgDvR4YMSOCBqSWRImmHHbNXCxfX1uNIWtycv5kt7ygOpfkYxYUoEJcEBFbocHdp6vAdjczOa3TAAzVk8ZHAcA95TUkivo/8d2L9BVyEBRh0MvAG5yQPVVoXEAcEyVjl6CTtcS0RnbFjGoyrhvhRuZldLQzn7UrjgyTsBIgiZPto4UHu2b4wIv10Z9FsgIlpFhA4wCEBbSFQOOY5Y7eUtWxwU0jesJOjLGw4kg+c66/oTDFbdDWscPbX6ixOUlJWamWwo4Ht8V11dsEAF32x7iquB+v3UMjVTnbiYmhhLG6IDse9eMMBD9hMZC+q1aCM6vmzP2CVbOK9pssPD/YgnBC2dJ8d2rZpnuds3F+n2LlyKCf/8WWIzmSzcS6IvsOeARePn0FH4XwCnv8r19Q0nQHCvNScm5rkZC71qBUOIFmxvX7UZfuEQTrNd7R7p0BaoZ2PoTpzTAo750MeAY/r4mtFo//Ykrp9AW143VW+0AAawcLU/OMa5QTahEOJzc1t8HYEP7BQ61R/KFtFTrb1ywPxpOjFfXozhLTKiQOIhwWEmnXT3fJEOSm4Mfd64UOopItkZ/vmGdu0oUxqHaTLt/4KTEEoXnmX1N9OsyUcvIHb0eTkxV2tvzp2ERkcvZ5DTxBoYoMkuOJTOvVW4WkAdZzUuB7v7sDMgLMx/vcmvqTcQYWEtKqUDY3RtpZlc3aRh9X9Lpjc3KQyCwMgBOcNEHcDADmuLulKhv4yq8oijCiXfRQNsJrD5hXmNpdi5naXZwXA/kHQBavZ/0mHrMPWUXAITVV1l957wyhmDmkkwJQ7beEtUtebvHkSSnxYNPKMwuup6KzEoxt6/E3BuV2FdGkkjZLd0axOzpVHZ6+AGJLoCUjZNEte7fGn3f2hgAo4UKmuHtROmEO/dGZQHeHBiaGwU988/eNYhqwuYOwpZ43g8C+H15AXgBeAF4AXgBeAF4AXj+w27PfdzP+3juA4/4zOdTH/kMP96e/9DrEx/7Dd+f/eDxn9aj38+w/5+nPvz+3n74/ZmP//8HAug4My276/EAAAAASUVORK5CYII="></image>
+                              </defs>
+                          </svg>
+
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </footer>
+  </main>
+</body>
+
+<script src="./script/preline.js"></script>
+<script src="./script/script.js"></script>
+
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html >
+<html dir="rtl" lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history version</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link href="../dist/output.css" rel="stylesheet">
+
+
+</head>
+
+
+<body class="overflow-x-hidden m-0 p-0 max-w-[2000px] min-w-[300px] mx-auto">
+    <div class="mainContainer ">
+
+
+        <div id="sidebar"
+        class="sidebar w-full  h-[60px] bg-black flex justify-between items-center  duration-300 ease-in-out lg:h-[90vh] lg:bg-green-950  lg:w-[82px] lg:justify-center lg:items-center lg:content-center lg:self-start ">
+        <button onclick='toggleSidebar()'
+            class="flex flex-col items-center justify-center lg:self-start lg:pt-3 gap-[2px] pr-10  ">
+            <div class="w-6 h-[2px] bg-white mb-1"></div>
+            <div class="w-6 h-[2px] bg-white mb-1"></div>
+            <div class="w-6 h-[2px] bg-white"></div>
+        </button>
+        <div class="sidebarP pl-7 flex flex-col items-center">
+            <b>
+                <p class="metaP h-5 text-white lg:hidden">متارنگ</p>
+            </b>
+            <p class="metarangP text-white/50 lg:hidden">متاورس رنگ </p>
+        </div>
+    </div>
+
+
+
+        <div class="centerItem w-[100%] h-[90%] lg:px-7 ">
+
+            <!-- شروع  برید کرامب-->
+
+            <div class="flex flex-row items-center gap-1 self-start   pr-6 lg:pr-0 lg:pt-8 ">
+                <a class="text-[#0066FF] cursor-pointer lg:text-xl" href="https://rgb.irpsc.com/">متارنگ</a>
+                <svg class="w-4 h-4 xl:w-5 xl:h-5 2xl:w-6 2xl:h-5" fill="none" stroke="#FFFFFF" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                <span class="text-white font-bold lg:text-xl ">تاریخچه ورژن متارنگ</span>
+            </div>
+            <!-- پایان  برید کرامب-->
+
+            <div class="self-start justify-between flex pt-8 w-full h-full  gap-8 ">
+
+                <div id="searchAndVersionHistory" class="searchAndVersionHistory">
+
+                     <div
+                            class="searchBoxContainer w-[95%]   transition-[right,width] duration-300 ease-in-out flex items-center flex-row justify-between bg-[#1A1A18] lg:w-full h-[50px] min-h-[50px] rounded-[12px] ">
+                            <div class="searchIcon flex justify-center pr-7">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.67072 8.61694C1.67072 4.68636 4.85708 1.5 8.78765 1.5C12.7182 1.5 15.9046 4.68636 15.9046 8.61694C15.9046 12.5475 12.7182 15.7339 8.78765 15.7339C4.85708 15.7339 1.67072 12.5475 1.67072 8.61694ZM8.78765 0C4.02865 0 0.170715 3.85793 0.170715 8.61694C0.170715 13.3759 4.02865 17.2339 8.78765 17.2339C10.7924 17.2339 12.6372 16.5493 14.1011 15.4012L16.8142 18.1073C17.1075 18.3998 17.5824 18.3992 17.8749 18.1059C18.1674 17.8126 18.1668 17.3378 17.8735 17.0453L15.1974 14.3761C16.5696 12.8499 17.4046 10.8309 17.4046 8.61694C17.4046 3.85793 13.5467 0 8.78765 0Z" fill="white"/>
+                                    </svg>
+                                                                </div>
+                            <input type="text" id="searchBox"
+                                class="searchWrite pr-2 pl-5 font-['AzarMehr'] bg-transparent flex-1 w-[90%] h-[90%] border-none outline-none text-sm text-aliceblue"
+                                style="color: white;" placeholder="ورژن , عنوان و یا تاریخ مورد نیاز خود را جستجو کنید">
+                            <button
+                                class="searchButton font-normal text-[95%] pl-5 font-['AzarMehr'] border-none bg-transparent text-[#FFBC00] cursor-pointer">جستجو</button>
+                        </div>
+
+
+
+                    <p class="historyVersionP">تاریخچه ورژن ها</p>
+
+                    <div class="versionHistoryInfo">
+
+
+                        <div class="historyUpdated">
+
+
+
+                            <div onclick="getParagraphText1()" class="infoBoxBottom collapsed">
+                                <div class="logo">
+                                    <div class="circle"></div>
+                                    <div class="lineBottom"></div>
+                                </div>
+                                <div class="moreInfo">
+                                    <div class="topParagraph">
+                                        <p id="nText" class="textName">توسعه ها و بهبود یافته ها</p>
+                                        <p id="vText" class="textVersion">V 1. 1.1. 32</p>
+                                    </div>
+                                    <p id="dText" class="textDate">1402/03/01</p>
+
+
+
+                                    <div
+                                        class="accordion-content overflow-hidden transition-all duration-300 ease-in-out flex flex-col items-start gap-3 px-2.5">
+                                        <p class="description">توضیحات :</p>
+                                        <div class="descriptionParagraph">
+                                            <p>رندر با نقطه دید Z از نگین های سطوح
+                                                کارت شهروند متارنگ
+                                                صفحه دارایی های شهروند next.js متارنگ
+                                                سلسله خانوادگی بخش عضو گیری و نمایش اعضا
+                                                طراحی مودال سلسله خانوادگی متارنگ
+                                                ویرایش هایی در بخش های زیر نیز صورت گرفته است:
+                                                تکمیل موارد مانده از دفتر متارنگ
+                                                ریدیزاین تب حساب کاربری
+                                                تولید محتوا برای متاورس
+                                                محدودیت در خرید زمین متارنگ
+                                                حل تمامی مشکلات فاز یک متاورس رنگ بخش فرانت</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <!-- محتوای آکاردئون -->
+
+                            </div>
+
+
+                            <div onclick="getParagraphText2()" class="infoBoxBottom collapsed">
+                                <div class="logo">
+                                    <div class="circle"></div>
+                                    <div class="lineBottom"></div>
+
+                                </div>
+                                <div class="moreInfo">
+                                    <div class="topParagraph">
+                                        <p id="nText1" class="textName"> متاورس رنگ و بخش های جدید و بهبود یافته آن </p>
+                                        <p id="vText1" class="textVersion">V 3. 1.1. 21 </p>
+
+                                    </div>
+
+
+                                    <p id="dText1" class="textDate">1403/03/16</p>
+                                    <div
+                                        class="accordion-content overflow-hidden transition-all duration-300 ease-in-out flex flex-col items-start gap-3 px-2.5">
+                                        <p class="description">توضیحات :</p>
+                                        <div class="descriptionParagraph">
+                                            <p>رندر با نقطه دید Z از نگین های سطوح
+                                                کارت شهروند متارنگ
+                                                صفحه دارایی های شهروند next.js متارنگ
+                                                سلسله خانوادگی بخش عضو گیری و نمایش اعضا
+                                                طراحی مودال سلسله خانوادگی متارنگ
+                                                ویرایش هایی در بخش های زیر نیز صورت گرفته است:
+                                                تکمیل موارد مانده از دفتر متارنگ
+                                                ریدیزاین تب حساب کاربری
+                                                تولید محتوا برای متاورس
+                                                محدودیت در خرید زمین متارنگ
+                                                حل تمامی مشکلات فاز یک متاورس رنگ بخش فرانت</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+                            <div onclick="getParagraphText3()" class="infoBoxBottom collapsed">
+                                <div class="logo">
+                                    <div class="circle"></div>
+                                    <div class="lineBottom"></div>
+
+                                </div>
+                                <div class="moreInfo">
+                                    <div class="topParagraph">
+                                        <p id="nText2" class="textName"> متاورس رنگ و رخداد های جدید آن </p>
+                                        <p id="vText2" class="textVersion">V 1. 8.1. 23 </p>
+
+                                    </div>
+
+
+                                    <p id="dText2" class="textDate">1402/03/30</p>
+                                    <div
+                                        class="accordion-content overflow-hidden transition-all duration-300 ease-in-out flex flex-col items-start gap-3 px-2.5">
+                                        <p class="description">توضیحات :</p>
+                                        <div class="descriptionParagraph">
+                                            <p>رندر با نقطه دید Z از نگین های سطوح
+                                                کارت شهروند متارنگ
+                                                صفحه دارایی های شهروند next.js متارنگ
+                                                سلسله خانوادگی بخش عضو گیری و نمایش اعضا
+                                                طراحی مودال سلسله خانوادگی متارنگ
+                                                ویرایش هایی در بخش های زیر نیز صورت گرفته است:
+                                                تکمیل موارد مانده از دفتر متارنگ
+                                                ریدیزاین تب حساب کاربری
+                                                تولید محتوا برای متاورس
+                                                محدودیت در خرید زمین متارنگ
+                                                حل تمامی مشکلات فاز یک متاورس رنگ بخش فرانت</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+
+                            <div onclick="getParagraphText4()" class="infoBoxBottom collapsed">
+                                <div class="logo">
+                                    <div class="circle"></div>
+                                    <div class="lineBottom"></div>
+
+                                </div>
+                                <div class="moreInfo">
+                                    <div class="topParagraph">
+                                        <p id="nText3" class="textName">سیستم متاورس رنگ و جدیدترین ها </p>
+                                        <p id="vText3" class="textVersion">V 1. 5.1. 21 </p>
+
+                                    </div>
+
+
+                                    <p id="dText3" class="textDate">1402/09/14</p>
+                                    <div
+                                        class="accordion-content overflow-hidden transition-all duration-300 ease-in-out flex flex-col items-start gap-3 px-2.5">
+                                        <p class="description">توضیحات :</p>
+                                        <div class="descriptionParagraph">
+                                            <p>رندر با نقطه دید Z از نگین های سطوح
+                                                کارت شهروند متارنگ
+                                                صفحه دارایی های شهروند next.js متارنگ
+                                                سلسله خانوادگی بخش عضو گیری و نمایش اعضا
+                                                طراحی مودال سلسله خانوادگی متارنگ
+                                                ویرایش هایی در بخش های زیر نیز صورت گرفته است:
+                                                تکمیل موارد مانده از دفتر متارنگ
+                                                ریدیزاین تب حساب کاربری
+                                                تولید محتوا برای متاورس
+                                                محدودیت در خرید زمین متارنگ
+                                                حل تمامی مشکلات فاز یک متاورس رنگ بخش فرانت</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                            <div onclick="getParagraphText5()" class="infoBoxBottom collapsed ">
+                                <div class="logo">
+                                    <div class="circle"></div>
+                                    <div class="lineBottom"></div>
+
+                                </div>
+                                <div class="moreInfo">
+                                    <div class="topParagraph">
+                                        <p id="nText4" class="textName"> بخش های توسعه یافته و بهبود یافته </p>
+                                        <p id="vText4" class="textVersion">V 1. 1.1. 25</p>
+
+                                    </div>
+
+
+                                    <p id="dText4" class="textDate">1400/03/25</p>
+                                    <div
+                                        class="accordion-content overflow-hidden transition-all duration-300 ease-in-out flex flex-col items-start gap-3 px-2.5">
+                                        <p class="description">توضیحات :</p>
+                                        <div class="descriptionParagraph">
+                                            <p>رندر با نقطه دید Z از نگین های سطوح
+                                                کارت شهروند متارنگ
+                                                صفحه دارایی های شهروند next.js متارنگ
+                                                سلسله خانوادگی بخش عضو گیری و نمایش اعضا
+                                                طراحی مودال سلسله خانوادگی متارنگ
+                                                ویرایش هایی در بخش های زیر نیز صورت گرفته است:
+                                                تکمیل موارد مانده از دفتر متارنگ
+                                                ریدیزاین تب حساب کاربری
+                                                تولید محتوا برای متاورس
+                                                محدودیت در خرید زمین متارنگ
+                                                حل تمامی مشکلات فاز یک متاورس رنگ بخش فرانت</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+
+                            <div onclick="getParagraphText6()" class="infoBoxBottom collapsed">
+                                <div class="logo">
+                                    <div class="circle"></div>
+                                    <div class="lineBottom"></div>
+
+                                </div>
+                                <div class="moreInfo">
+                                    <div class="topParagraph">
+                                        <p id="nText5" class="textName"> بخش های توسعه یافته و بهبود یافته </p>
+                                        <p id="vText5" class="textVersion">V 1. 1.1. 25</p>
+
+                                    </div>
+
+
+                                    <p id="dText5" class="textDate">1400/03/25</p>
+                                    <div
+                                        class="accordion-content overflow-hidden transition-all duration-300 ease-in-out flex flex-col items-start gap-3 px-2.5">
+                                        <p class="description">توضیحات :</p>
+                                        <div class="descriptionParagraph">
+                                            <p>رندر با نقطه دید Z از نگین های سطوح
+                                                کارت شهروند متارنگ
+                                                صفحه دارایی های شهروند next.js متارنگ
+                                                سلسله خانوادگی بخش عضو گیری و نمایش اعضا
+                                                طراحی مودال سلسله خانوادگی متارنگ
+                                                ویرایش هایی در بخش های زیر نیز صورت گرفته است:
+                                                تکمیل موارد مانده از دفتر متارنگ
+                                                ریدیزاین تب حساب کاربری
+                                                تولید محتوا برای متاورس
+                                                محدودیت در خرید زمین متارنگ
+                                                حل تمامی مشکلات فاز یک متاورس رنگ بخش فرانت</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+                            <div onclick="getParagraphText7()" class="infoBoxBottom collapsed">
+                                <div class="logo">
+                                    <div class="circle"></div>
+                                    <div class="lineBottom"></div>
+
+                                </div>
+                                <div class="moreInfo">
+                                    <div class="topParagraph">
+                                        <p id="nText6" class="textName"> بخش های توسعه یافته و بهبود یافته </p>
+                                        <p id="vText6" class="textVersion">V 1. 1.1. 25</p>
+
+                                    </div>
+
+
+                                    <p id="dText6" class="textDate">1400/03/25</p>
+                                    <div
+                                        class="accordion-content overflow-hidden transition-all duration-300 ease-in-out flex flex-col items-start gap-3 px-2.5">
+                                        <p class="description">توضیحات :</p>
+                                        <div class="descriptionParagraph">
+                                            <p>رندر با نقطه دید Z از نگین های سطوح
+                                                کارت شهروند متارنگ
+                                                صفحه دارایی های شهروند next.js متارنگ
+                                                سلسله خانوادگی بخش عضو گیری و نمایش اعضا
+                                                طراحی مودال سلسله خانوادگی متارنگ
+                                                ویرایش هایی در بخش های زیر نیز صورت گرفته است:
+                                                تکمیل موارد مانده از دفتر متارنگ
+                                                ریدیزاین تب حساب کاربری
+                                                تولید محتوا برای متاورس
+                                                محدودیت در خرید زمین متارنگ
+                                                حل تمامی مشکلات فاز یک متاورس رنگ بخش فرانت</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+                        <button class="displayMore">مشاهده بیشتر</button>
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div id="versionInfo" class="versionInfo">
+
+
+
+                    <div class="lineBox">
+
+                        <p class="versionP">ورژن :</p>
+                        <hr class="dottedLine">
+
+                        <p id="displayVersionDes" class="displayVersionDes">V 1. 1.1. 21</p>
+
+
+
+
+                    </div>
+
+                    <div class="lineBox">
+
+
+                        <p class="toseVbehbod">توسعه ها و بهبود یافته ها</p>
+                        <hr class="dottedLineTose">
+
+                        <p id="textVersionDes" class="toseVbehbodDate">1402/03/16</p>
+
+
+                    </div>
+
+                    <div class="descriptionBox">
+
+                        <p class="description">توضیحات :</p>
+
+
+                    </div>
+
+
+                    <div class="descriptionParagraph">
+                        <p
+                            style="justify-content: space-between; padding-top: 10px; text-align:justify ; font-family: 'AzarMehr';">
+                            رندر با نقطه دید Z از نگین های سطوح
+                            کارت شهروند متارنگ
+                            صفحه دارایی های شهروند next.js متارنگ
+                            سلسله خانوادگی بخش عضو گیری و نمایش اعضا
+                            طراحی مودال سلسله خانوادگی متارنگ
+                            ویرایش هایی در بخش های زیر نیز صورت گرفته است:
+                            تکمیل موارد مانده از دفتر متارنگ
+                            ریدیزاین تب حساب کاربری
+                            3. تولید محتوا برای متاورس
+                            4. محدودیت در خرید زمین متارنگ
+                            حل تمامی مشکلات فاز یک متاورس رنگ بخش فرانت
+                            >رندر با نقطه دید Z از نگین های سطوح
+                            کارت شهروند متارنگ
+                            صفحه دارایی های شهروند next.js متارنگ
+                            سلسله خانوادگی بخش عضو گیری و نمایش اعضا
+                            طراحی مودال سلسله خانوادگی متارنگ
+                            ویرایش هایی در بخش های زیر نیز صورت گرفته است:
+                            تکمیل موارد مانده از دفتر متارنگ
+                            ریدیزاین تب حساب کاربری
+                            3. تولید محتوا برای متاورس
+                            4. محدودیت در خرید زمین متارنگ
+                            حل تمامی مشکلات فاز یک متاورس رنگ بخش فرانت</p>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="../JS/version.js">
+
+    </script>
+
+</body>
+
+</html>
