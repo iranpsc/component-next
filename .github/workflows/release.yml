@@ -44,11 +44,6 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      # Zip dist folder and ensure output.zip exists
-      - name: Zip dist folder
-        run: |
-          zip -r $GITHUB_WORKSPACE/output.zip dist/
-          echo "output.zip created"
 
   release:
     needs: build
