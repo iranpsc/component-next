@@ -1,12 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
 
-module.exports = {  safelist: [
-  'flex',
-  'flex-col',
-  'flex-row',
-  'items-center', // هر کلاسی که Chart.js نیاز دارد
-],
+module.exports = { 
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.js",

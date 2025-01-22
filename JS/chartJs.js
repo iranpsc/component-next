@@ -1,20 +1,16 @@
-
 function toggleSidebar() {
     const sidebar = document.getElementById('sidebar');
     const isSidebarOpen = sidebar.classList.contains('lg:w-[82px]');
 
     if (isSidebarOpen) {
-        sidebar.classList.remove('lg:w-[82px]');
-        sidebar.classList.add('lg:w-[322px]');
-
+        sidebar.classList.remove('lg:w-[82px]', 'w-[82px]');
+        sidebar.classList.add('lg:w-[322px]', 'w-[322px]');
     } else {
-        sidebar.classList.remove('lg:w-[322px]');
-        sidebar.classList.add('lg:w-[82px]');
-     
-
+        sidebar.classList.remove('lg:w-[322px]', 'w-[322px]');
+        sidebar.classList.add('lg:w-[82px]', 'w-[82px]');
     }
-
 }
+
 
 
 
