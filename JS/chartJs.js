@@ -18,8 +18,6 @@ function toggleSidebar() {
 
 
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const copyButton = document.getElementById('copy-button');
     const inviteLink = document.getElementById('invite-link');
@@ -42,11 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
-
-
-
 const moments = document.querySelectorAll('.moment');
 
 // اضافه کردن event listener به هر روز
@@ -63,35 +56,6 @@ moments.forEach(moment => {
         this.classList.add('text-[#FFFFFF]');
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

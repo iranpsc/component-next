@@ -1,7 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin');
 
-module.exports = {
+module.exports = {  safelist: [
+  'flex',
+  'flex-col',
+  'flex-row',
+  'items-center', // هر کلاسی که Chart.js نیاز دارد
+],
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
@@ -18,6 +23,7 @@ module.exports = {
       '2xl': '1536px',
       '3xl': '1850px',
     },
+    
     extend: {
       colors: {
         'primery-blue': '#2667FF',
